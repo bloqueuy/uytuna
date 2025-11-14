@@ -6,7 +6,7 @@
 
 
 .c-btn{
-  --_fz: var(--fz-300);
+  --_fz: var(--fz-400);
   --_ff: var(--font-alt);
   --_fw: 700;
   --_lh: 1.2;
@@ -29,6 +29,11 @@
   border-radius: var(--btn-radius, var(--_radius));
   box-shadow: .75rem .75rem 0 0 var(--color-accent);
 }
+
+.c-btn + .u-text{
+    margin-top: 1.2em;
+}
+
 
 .c-btn + *{
     margin-left: 1em;

@@ -18,7 +18,7 @@
 */
 
 .u-text{
-    --_fz: var(--fz-000);
+    --_fz: var(--fz-100);
     --_fw: 400;
     --_lh: 1.4;
     --_ls: -0.03em;
@@ -37,16 +37,12 @@ strong.u-text{
 }
 
 .u-text + .u-text,
+.u-text + .c-btn,
+.u-text + .u-heading,
 .u-text > * + *{
     margin-top: 1em;
 }
 
-.u-text h2,
-.u-text h3,
-.u-text h4,
-.u-text h5{
-    margin-top: 1.4em;
-}
 
 
 /* ********************** SHORT MOBILE ********************** */

@@ -127,11 +127,7 @@
 @media (min-width: 90rem) {
 
     /* 1440px */
-    :root {
-        --wrapper: 290rem;
-        --wrapper-x: clamp(var(--space-x), 20.139vw, 29rem);
-        --header-wrapper: 29rem;
-    }
+ 
 }
 
 
@@ -160,6 +156,11 @@
 
 @media (min-width: 112.5rem) {
     /* 1800px */
+    :root {
+        --wrapper: 390rem;
+        --wrapper-x: clamp(var(--space-x), 20.139vw, 39rem);
+        --header-wrapper: 29rem;
+    }
 }
 
 @media (min-width: 112.5rem) and (min-height: 56.25rem) {

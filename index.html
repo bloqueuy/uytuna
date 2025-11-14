@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Uytuna - Una nueva forma de saborear el atún</title>
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -20,6 +20,8 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/fixed.inline.css">
     <link rel="stylesheet" href="assets/css/fixed.css">
+    <link rel="stylesheet" href="assets/css/home.inline.css">
+    <link rel="stylesheet" href="assets/css/home.css">
 
     <!-- Favicons -->
     <link rel="icon" type="image/x-icon" href="assets/images/static/favicon.ico">
@@ -34,13 +36,14 @@
 
 </head>
 
-<body>
+<body class="is-home">
 
     <!-- HEADER: Start -->
     <header class="c-header is-home js-header">
         <div class="c-header__wrapper">
 
-            <a class="c-header__brand" href="/">
+            <a class="c-header__brand" href="/" title="Uytuna - Volver al inicio"
+                aria-label="Uytuna - Volver al inicio">
                 <img class="c-header__logo" src="assets/images/static/logo.png" alt="Logo">
             </a>
 
@@ -53,12 +56,12 @@
                 <div class="c-nav__overlay"></div>
 
                 <ul class="c-nav__list">
-                    <li class="c-nav__item"><a class="c-nav__link is-active" href="/pages/">Inicio</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/pages/">La Compañía</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/pages/">Marca Blanca</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/pages/">Marca Uytuna</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/pages/">Expansión</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/pages/">Contacto</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link is-active" href="/">Inicio</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="/la-compañia/">La Compañía</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="/marca-blanca/">Marca Blanca</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="/marca-uytuna/">Marca Uytuna</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="/expansion/">Expansión</a></li>
+                    <li class="c-nav__item"><a class="c-nav__link" href="/contacto/">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -66,11 +69,134 @@
     <div class="js-header-limit"></div>
     <!-- HEADER: End -->
 
+    <!-- !HERO -->
+    <div class="c-hero">
+        <div id="js-videoContainer" class="c-hero__video c-video is-loading is-muted">
+            <div class="js-video" data-src-mobile="assets/videos/hero-video/uytuna-video-home.mp4"
+                data-src-desktop="assets/videos/hero-video/uytuna-video-home.mp4">
+                <video width="1920" height="1080" preload="none" muted loop autoplay playsinline
+                    poster="assets/videos/preview-video.jpg" class="c-hero__video-video js-video__video"></video>
+            </div>
+
+
+            <span class="c-video__alert">
+                <span class="c-video__alert-text">Error al cargar el video</span>
+            </span>
+        </div>
+
+        <div class="c-hero__content">
+            <h1 class="c-hero__title">
+                <span class="u-hidden-for-seo">Somos UYTUNA, una nueva forma de saborear el atún</span>
+                <picture class="c-hero__logo">
+
+                    <img src="assets/images/static/logo-vertical-white.png" alt="Uytuna">
+                </picture>
+            </h1>
+
+        </div>
+
+    </div> <!-- c-hero -->
+
+    <main>
+        <!-- <section class="c-about">
+            <div class="o-wrapper o-section">
+
+                <div class="c-about__content">
+
+                  
+                </div>
+
+
+
+            </div>
+        </section> -->
+
+        <section class="c-about">
+
+            <!-- Hero Text (solo texto) -->
+            <div class="c-about__hero">
+                <picture class="c-about__background-image c-pic c-pic--cover">
+                    <img src="/assets/images/static/home/about-hero-bg.png" alt="imagen de fondo con un faro iluminado">
+                </picture>
+
+                <div class="o-wrapper o-section">
+
+                    <div class="c-about__content c-about__content--inline c-about__content--col1">
+
+                        <a href="/la-compania/" class="c-about__link">Compañía</a>
+
+                        <div>
+
+                            <h2 class="u-heading u-heading--sm">La riqueza del océano en nuestras manos</h2>
+                            <p class="u-text">
+                                De la inmensidad del océano a tu mesa, en UYTUNA transformamos la fuerza del mar en una
+                                experiencia de sabor y calidad. Somos una empresa uruguaya especializada en la
+                                elaboración y
+                                exportación de conservas de atún, que combina la tradición pesquera con la tecnología
+                                más
+                                avanzada en conservación y envasado.
+                            </p>
+                            <p class="u-text">Cada conserva de atún UYTUNA refleja nuestra pasión por el océano.
+                                Seleccionamos
+                                cuidadosamente cada pieza y aplicamos procesos responsables que garantizan un producto
+                                de
+                                máxima
+                                calidad, desde el origen hasta la mesa. Con más de 15 años de experiencia internacional,
+                                UYTUNA
+                                se posiciona como una marca pionera e innovadora en el sector del atún en Uruguay.</p>
+
+                            <a href="/" class="c-btn">Marca Uytuna</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección con texto e imagen -->
+            <div class="c-about__feature">
+                <div class="o-wrapper o-section">
+                    <div class="c-about__content c-about__grid">
+
+
+                        <picture class="c-about__picture c-pic">
+                            <img src="/assets/images/static/home/about-hand-world.jpg"
+                                alt="una mano sosteniendo el mundo">
+                        </picture>
+
+                        <h3 class="c-about__title">Innovation in food</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Valores (4 columnas) -->
+            <div class="c-about__values">
+                <div class="container">
+                    <h2>Bienvenido/a a la familia UYTUNA</h2>
+                    <div class="c-about__values-grid">
+                        <!-- 4 cards de valores -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- !FOOTER -->
+    <footer class="c-footer">
+        <div class="c-footer__wrapper">
+            <p class="c-footer__text">Uytuna - Todos los derechos reservados</p>
+        </div>
+    </footer>
+
     <!-- JAVASCRIPT -->
     <script src="/assets/js/fixed/plugins/noframework.waypoints.min.js"></script>
     <script src="/assets/js/fixed/interfaz.js"></script>
 
-</body>    
+    <!-- sitio -->
+    <script src="/assets/js/sitio/hero-video.js"></script>
+
+</body>
 
 
 </html>

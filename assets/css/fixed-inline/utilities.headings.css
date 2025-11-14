@@ -20,7 +20,7 @@
   --_fz: var(--fz-800);
   --_ff: var(--font-alt);
   --_fw: 700;
-  --_lh: 1.2;
+  --_lh: 4.2rem;
   --_ls: 1;
   --_color: var(--color-primary);
 
@@ -39,4 +39,8 @@
 
 .u-heading--xs{
   --_fz: var(--fz-600);
+}
+
+.u-heading + .u-text{
+  margin-top: 1.2em;
 }
