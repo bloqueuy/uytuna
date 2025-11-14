@@ -1,0 +1,46 @@
+/* ******************************************** */
+/** COMPONENTS: NAV
+/* ******************************************** */
+
+/* NAV */
+
+.c-nav__link {
+    position: relative;
+    transition: all var(--generic-delay) ease-out;
+}
+
+
+.c-nav__link::after {
+    content: "";
+    position: absolute;
+    bottom: -0.25rem;
+    left: 50%;
+    width: 0;
+    height: 0.15rem;
+    background-color: var(--color-secondary);
+    transition: all var(--generic-delay) ease-out;
+    transform: translateX(-50%);
+}
+
+
+/* ********************** MEDIA HOVER ********************** */
+
+@media (hover: hover) {
+
+    .c-nav__link:is(:hover, :focus){
+        color: var(--color-secondary);
+        text-shadow: 0.5px 0 0 currentColor;
+    }
+
+    .c-nav__link:is(:hover, :focus)::after {
+        width: 100%;
+        opacity: 1;
+    }
+
+    .c-nav__link.is-active:is(:hover, :focus)::after {
+        background-color: var(--color-secondary);
+    }
+
+
+
+}

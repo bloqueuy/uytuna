@@ -1,0 +1,20 @@
+/* ******************************************** */
+/** COMPONENT: BTNs
+/* ******************************************** */
+
+/*  BTNS */
+
+
+.c-link{
+  --_fz: var(--fz-100);
+  --_fw: 400;
+  --_lh: 1.2;
+  --_ls: 1;
+  --_color: var(--color-primary);
+
+  display: inline-block;
+  font-size: var(--link-fz, var(--_fz));
+  font-family: var(--link-ff, var(--_ff));
+}
+
+

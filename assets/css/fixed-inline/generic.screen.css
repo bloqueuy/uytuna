@@ -1,0 +1,69 @@
+/* ******************************************** */
+/** GENERIC: SCREEN
+/* ******************************************** */
+
+/* BODY */
+
+html{
+    font-size: 62.5%;
+    font-family: var(--font);
+    color: var(--color-neutral-800);
+}
+html:not(.disable-smooth-scroll){
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-xs);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+body{
+    font-size: 100%;
+}
+input, textarea, select, body, button{
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: none;
+    font-family: var(--font);
+    font-weight: 400;
+    font-optical-sizing: auto;
+}
+p{
+    text-rendering: optimizeLegibility;
+}
+strong{
+    font-weight: 700;
+}
+em{
+    font-style: italic;
+}
+input, textarea, select, button{
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    overflow: visible;
+    font-size: inherit;
+}
+input:not([type="checkbox"]):not([type="radio"]), textarea, select, button{
+    -webkit-appearance: none;
+}
+
+a, button{
+    color: var(--color-neutral-800);
+    -webkit-tap-highlight-color: hsl( var(--color-primary-400-hsl) / 2% );
+}
+a,
+button:not([disabled]){
+    cursor: pointer;
+}
+:is(h1, h2, h3, h4, h5, h6) a{
+    color: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}

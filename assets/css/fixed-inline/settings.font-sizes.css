@@ -1,0 +1,109 @@
+/* ******************************************** */
+/** SETTINGS: FONT SIZE VARIABLES
+/* ******************************************** */
+
+
+:root {
+    --fz-000: 1.3rem;
+    --fz-100: 1.5rem;
+    --fz-200: 1.7rem;
+    --fz-300: 1.9rem;
+    --fz-400: 2.4rem;
+    --fz-600: 3.4rem;
+    --fz-700: 4.2rem;
+    --fz-800: 5.6rem;
+}
+
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) { /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) { /* 767px, 730px */
+}
+
+ 
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) { /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) { /* 768px */
+
+}
+@media (min-width: 48rem) and (orientation: portrait) {
+}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) { /* 980px */
+
+    :root {
+        --fz-000: clamp(1.2rem, 0.97vw, 1.4rem);
+        --fz-100: clamp(1.5rem, 1.04vw, 1.6rem);
+        --fz-200: clamp(1.7rem, 1.25vw, 1.8rem);
+        --fz-300: clamp(1.9rem, 1.39vw, 2rem);
+        --fz-400: clamp(2.4rem, 1.80vw, 2.6rem);
+        --fz-600: clamp(3.4rem, 2.50vw, 3.6rem);
+        --fz-700: clamp(4.2rem, 2.5vw, 4.8rem);
+        --fz-800: clamp(5.6rem, 4.166vw, 6rem);
+        
+    }
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) { /* 1200px */
+}
+@media (min-width: 75rem) and (min-height: 45rem) { /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) { /* 1400px */
+}
+@media (min-width: 87.5rem) and (min-height: 49.375rem) { /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) { /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) { /* 1600px, 790px */
+}
+@media (min-width: 100rem) and (min-height: 56.25rem) { /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) { /* 1800px */
+}
+@media (min-width: 112.5rem) and (min-height: 56.25rem) { /* 1800px, 900px */
+}

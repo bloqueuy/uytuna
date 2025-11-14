@@ -1,0 +1,29 @@
+/* ******************************************** */
+/** GENERIC: SCREEN
+/* ******************************************** */
+
+/* BODY */
+
+a, button{
+    transition:
+        color var(--generic-delay) ease-out,
+        background-color var(--generic-delay) ease-out,
+        border var(--generic-delay) ease-out,
+        opacity var(--generic-delay) ease-out,
+        box-shadow var(--generic-delay) ease-out;
+}
+:is(a, button) svg g,
+:is(a, button) svg path{
+    transition:
+        fill var(--generic-delay) ease-out,
+        stroke var(--generic-delay) ease-out;
+}
+
+:is(a, button):focus-visible{
+    outline: -webkit-focus-ring-color auto 0.1rem;
+    outline-offset: 0.1rem;
+}
+
+body:has(.c-popup.is-visible){
+    overflow: hidden;
+}

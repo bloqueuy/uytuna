@@ -1,0 +1,72 @@
+/* ******************************************** */
+/** OBJECTS: SECTION
+/* ******************************************** */
+
+/* SECTION */
+
+:root{
+    /* --section-y: 5.6rem; */
+    --section-y: 3.6rem;
+}
+
+.o-section{
+    padding-top: var(--section-y);
+    padding-bottom: var(--section-y);
+}
+.o-section-t{
+    padding-top: var(--section-y);
+}
+.o-section-b{
+    padding-bottom: var(--section-y);
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem){ /* 767px, 730px */
+}
+
+ 
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) { /* 500px, 767px */
+    
+    
+}
+
+
+
+
+/* ********************** de MOBILE a TABLET ********************** */
+
+@media (min-width: 48rem) {
+    
+    :root{
+        --section-y: 4rem;
+    }
+
+}
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) { /* 980px */
+}
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) { /* 1200px */
+}
+@media (min-width: 75rem) and (min-height: 45rem) { /* 1200, 720 */
+
+
+}

@@ -1,0 +1,27 @@
+/* ******************************************** */
+/** COMPONENT: PIC
+/* ******************************************** */
+
+/* PIC */
+
+[class*="c-pic"],
+[class*="c-pic"] img{
+    display: block;
+}
+[class*="c-pic"]{
+    position: relative;
+}
+[class*="c-pic"] img{
+    width: 100%;
+    height: auto;
+}
+
+.c-pic--cover,
+.c-pic--cover img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+}

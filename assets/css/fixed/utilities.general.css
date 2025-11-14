@@ -1,0 +1,19 @@
+/* ******************************************** */
+/** UTILITIES: GENERAL
+/* ******************************************** */
+
+/* TAP SIZE */
+
+@media (hover: none){
+    .u-tap-size:not([class*="u-icon-"])::before{
+        content: "";
+        display: block;
+        width: 100%;
+        min-width: var(--tap-size);
+        height: var(--tap-size);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

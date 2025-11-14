@@ -1,0 +1,42 @@
+/* ******************************************** */
+/** COMPONENT: HEADINGS
+/* ******************************************** */
+
+/*
+  ! HEADING
+  OVERRIDES:
+    * // --heading-ff               // Font family
+    * // --heading-fz               // Font size
+    * // --heading-fw               // Font weight
+    * // --heading-lh               // Line height
+    * // --heading-ls               // Letter spacing
+    * // --heading-color            // Color
+    * // --heading-strong-color     // Strong Color
+    * // --heading-strong-fw        // Strong Font weight
+*/
+
+
+.u-heading{
+  --_fz: var(--fz-800);
+  --_ff: var(--font-alt);
+  --_fw: 700;
+  --_lh: 1.2;
+  --_ls: 1;
+  --_color: var(--color-primary);
+
+  font-size: var(--heading-fz, var(--_fz));
+  font-family: var(--heading-ff, var(--_ff));
+  font-weight: var(--heading-fw, var(--_fw));
+  line-height: var(--heading-lh, var(--_lh));
+  letter-spacing: var(--heading-ls, var(--_ls));
+  color: var(--heading-color, var(--_color));
+}
+
+
+.u-heading--sm{
+  --_fz: var(--fz-700);
+}
+
+.u-heading--xs{
+  --_fz: var(--fz-600);
+}

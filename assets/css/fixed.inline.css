@@ -1,0 +1,34 @@
+/* ******************************************** */
+/** FIXED INLINE
+/* ******************************************** */
+
+/* Settings */
+@import url(fixed-inline/tiny-slider.css);
+@import url(fixed-inline/tiny-slider-custom.css);
+@import url(fixed-inline/settings.vars.css);
+@import url(fixed-inline/settings.font-sizes.css);
+@import url(fixed-inline/settings.colors.css);
+@import url(fixed-inline/settings.fonts.css);
+
+/* Generic */
+@import url(fixed-inline/generic.reset.css);
+@import url(fixed-inline/generic.screen.css);
+
+/* Objects */
+@import url(fixed-inline/objects.structure.css);
+@import url(fixed-inline/objects.section.css);
+
+
+/* Components */
+@import url(fixed-inline/components.btn.css);
+@import url(fixed-inline/components.links.css);
+@import url(fixed-inline/components.nav.css);
+@import url(fixed-inline/components.header.css);
+
+
+
+
+/* Utilities */
+@import url(fixed-inline/utilities.headings.css);
+@import url(fixed-inline/utilities.general.css);
+@import url(fixed-inline/utilities.structure.css);

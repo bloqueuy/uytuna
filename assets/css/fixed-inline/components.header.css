@@ -1,0 +1,248 @@
+/* ******************************************** */
+/** COMPONENTS: HEADER
+/* ******************************************** */
+.js-header-limit {
+    position: absolute;
+    top: var(--header);
+    left: -1rem;
+    background: red;
+    width: 1rem;
+    height: 1rem;
+}
+
+.c-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    transition: background-color 400ms ease-out, box-shadow 400ms ease-out;
+}
+
+.c-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: var(--header-wrapper);
+    height: var(--header);
+    transition: height 400ms ease-out;
+}
+
+.c-header.is-fixed{
+    background-color: var(--color-neutral-100);
+    box-shadow: 0 .2rem .8rem rgba(0, 0, 0, 0.05) hsl(var(--color-primary-hsl) / 0.05);
+}
+
+.c-header.is-fixed .c-header__wrapper {
+    height: var(--header-xs);
+}
+
+
+.c-header__brand{
+    z-index: 1;
+}
+
+.c-header__logo {
+    max-width: clamp(11rem, 12.36vw, 17.8rem);
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* ********************** ONLY MOBILE ********************** */
+
+@media (max-width: 61.1875rem)
+/* up to 979px */
+    {
+
+    .c-header {
+        --nav-btn: var(--tap-size);
+        margin-bottom: var(--header);
+    
+    }
+
+    .c-btn-show-nav {
+        position: absolute;
+        left: -999999px;
+    }
+
+    .c-header__btn {
+        --bar-duration: 200ms;
+        z-index: 1;
+    }
+
+    .c-header__btn {
+        --nav-btn-bars: 3.2rem;
+        --btn-rotate: 0deg;
+        width: var(--nav-btn);
+        height: var(--nav-btn);
+        position: absolute;
+        right: calc(var(--wrapper-x) - (var(--nav-btn) - var(--nav-btn-bars))* 0.5);
+        top: 50%;
+        margin-top: calc(var(--nav-btn)* -0.5);
+        transform: rotate(var(--btn-rotate));
+        transition: transform .7s ease-out;
+    }
+
+    .c-btn-show-nav:checked~.c-header__btn::after,
+    .c-btn-show-nav:checked~.c-header__btn::before {
+        --bar-translate: -50%;
+        --bar-rotate: 45deg;
+        --bar-scale: 0.8 1;
+        transition-delay: 0s, 0.2s, 0.4s;
+    }
+
+    .c-btn-show-nav:checked~.c-header__btn {
+        transition-delay: 0.2s;
+        transition-duration: .8s;
+        transition-timing-function: var(--easeOutCubic);
+    }
+
+    .c-header__btn::before,
+    .c-header__btn::after {
+        --bar-translate: calc(-50% - 0.5rem);
+        --bar-rotate: 0deg;
+        content: "";
+        display: block;
+        width: var(--nav-btn-bars);
+        height: 0.2rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: 0;
+        background-color: var(--bars-color, var(--color-primary));
+        rotate: var(--bar-rotate);
+        translate: -50% var(--bar-translate);
+    }
+
+    .c-header__btn::after {
+        --bar-translate: calc(-50% + 0.5rem);
+    }
+
+    .c-header__btn::after,
+    .c-header__btn::before {
+        --bar-scale: 1 1;
+        scale: var(--bar-scale);
+        transition: translate var(--bar-duration) ease-out, scale var(--bar-duration) ease-out, rotate var(--bar-duration) ease-out;
+        transition-delay: 0.4s, 0.2s, 0s;
+    }
+
+    .c-btn-show-nav:checked~.c-header__btn::after {
+        --bar-rotate: -45deg;
+    }
+
+    .c-btn-show-nav:checked~.c-header__btn {
+        --btn-rotate: 270deg;
+    }
+
+
+}
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) {
+    /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) {
+    /* 767px, 730px */
+}
+
+
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) {
+    /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) {
+    /* 768px */
+}
+
+@media (min-width: 48rem) and (orientation: portrait) {}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) {
+    /* 980px */
+
+    :root .c-header__btn,
+    :root .c-btn-show-nav {
+        display: none;
+    }
+
+    .c-header__logo.is-home {
+       display: none;
+    }
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) {
+    /* 1200px */
+}
+
+@media (min-width: 75rem) and (min-height: 45rem) {
+    /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) {
+    /* 1400px */
+}
+
+@media (min-width: 87.5rem) and (min-height: 49.375rem) {
+    /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) {
+    /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) {
+    /* 1600px, 790px */
+}
+
+@media (min-width: 100rem) and (min-height: 56.25rem) {
+    /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) {
+    /* 1800px */
+}
+
+@media (min-width: 112.5rem) and (min-height: 56.25rem) {
+    /* 1800px, 900px */
+}

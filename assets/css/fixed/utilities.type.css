@@ -1,0 +1,88 @@
+/* ******************************************** */
+/** UTILITIES: TYPE
+/* ******************************************** */
+
+/*
+  ! TEXT
+  OVERRIDES:
+    * // --text-fz
+    * // --text-fw
+    * // --text-lh
+    * // --text-ls
+    * // --text-color
+    * // --text-strong-fw
+    * // --text-strong-color
+    * // --text-link-fw
+    * // --text-link-color
+    * // --text-hover-color
+*/
+
+.u-text{
+    --_fz: var(--fz-000);
+    --_fw: 400;
+    --_lh: 1.4;
+    --_ls: -0.03em;
+    --_max-w: none;
+    
+    font-size: var(--text-fz, var(--_fz));
+    font-weight: var(--text-fw, var(--_fw));
+    line-height: var(--text-lh, var(--_lh));
+    letter-spacing: var(--text-ls, var(--_ls));
+    color: var(--text-color, var(--color-neutral-800));
+    max-width: var(--text-max-w, var(--_max-w));
+}
+
+strong.u-text{
+    --_fw: 600;
+}
+
+.u-text + .u-text,
+.u-text > * + *{
+    margin-top: 1em;
+}
+
+.u-text h2,
+.u-text h3,
+.u-text h4,
+.u-text h5{
+    margin-top: 1.4em;
+}
+
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem){ /* 359px */
+}
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) { /* 768px */
+    
+
+}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) { /* 980px */
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) { /* 1200px */
+
+}
+@media (min-width: 75rem) and (min-height: 45rem) { /* 1200, 720 */
+}
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) { /* 1400px */
+}

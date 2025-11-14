@@ -1,0 +1,23 @@
+/* ******************************************** */
+/** UTILITIES: GENERAL
+/* ******************************************** */
+
+/* TAP SIZE */
+
+.u-tap-size{
+    position: relative;
+}
+
+
+/* SEO */
+
+.u-hidden-for-seo{
+    position: absolute;
+    left: -999rem;
+}
+
+/* BACKGROUND SECTION */
+
+.u-bg{
+    background-color: var(--color-neutral-200);
+}

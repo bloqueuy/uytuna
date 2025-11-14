@@ -1,0 +1,156 @@
+/* ******* TINY SLIDER ******* */
+
+/* Custom styles */
+
+.tns-visually-hidden{
+    display: none;
+}
+.js-carousel__notInit [class*="--notInitHide"]{
+    height: 0 !important;
+    overflow: hidden;
+}
+
+/* No carousel */
+
+/* .tns-controls[style*="display"] ~ .tns-ovh .tns-slider{
+    width: 100% !important;
+    text-align: center;
+}
+.tns-controls[style*="display"] ~ .tns-ovh .tns-item{
+    text-align: left;
+}
+.tns-controls[style*="display"] ~ .tns-ovh .tns-inner{
+    margin: 0 !important;
+} */
+
+
+.tns-nav{
+    --_nav-btn-size: 1.4rem;
+    --_nav-btn-color: var(--color-neutral-100);
+    display: flex;
+    gap: 1.4rem;
+    flex-wrap: wrap;
+    /* padding-inline: var(--wrapper-x); */
+    justify-content: center;
+    z-index: 1;
+    
+}
+
+.tns-nav button{
+    width: var(--tns-nav-btn-size,var(--_nav-btn-size));
+    height: var(--tns-nav-btn-size,var(--_nav-btn-size));
+    border: .1rem solid var(--tns-nav-btn-color,var(--_nav-btn-color));
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tns-nav button.tns-nav-active{
+    background-color: var(--tns-nav-btn-color,var(--_nav-btn-color));
+}
+
+.tns-controls{
+    --_controls-size: 1.4rem;
+    --_controls-color: var(--color-neutral-900);
+    --_hover-bg: var(--color-hover);
+    display: flex;
+    align-items: center;
+}
+
+.tns-controls button{
+    display: flex;
+    width: var(--tap-size);
+    height: var(--tap-size);
+    align-items: center;
+    justify-content: center;
+}
+
+.tns-controls button::before{
+    content: "";
+    position: absolute;
+    width: var(--tns-controls-controls-size,var(--_controls-size));
+    height: var(--tns-controls-controls-size,var(--_controls-size));
+    border-top: .3rem solid var(--tns-controls-color,var(--_controls-color));
+    border-left: .3rem solid var(--tns-controls-color,var(--_controls-color));
+    transform: translateX(25%) rotate(315deg);
+}
+
+.tns-controls button::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: var(--tns-controls-color-hover,var(--_hover-bg));
+    border-radius: 50%;
+    transform: scale3d(0, 0, 0);
+    z-index: -1;
+}
+
+.tns-controls button[data-controls="next"]::before{
+    transform: translateX(-25%) rotate(135deg)
+}
+
+.c-full-slider .tns-controls{
+    --tns-controls-color: var(--color-neutral-100);
+    z-index: 1;
+}
+
+
+/* ********************** MEDIA HOVER ********************** */
+
+@media (hover: hover) { 
+
+    .tns-controls button::after{
+        transition: transform var(--generic-delay);
+    }
+
+    .tns-controls button::before{
+        transition: border var(--generic-delay);
+    }
+
+    .tns-controls button:is(:hover,:focus-visible){
+        --_controls-color: var(--color-neutral-100);
+    }
+
+    .tns-controls button:is(:hover,:focus-visible)::after{
+        transform: scale3d(.8, .8, .8);
+        transition: transform var(--generic-delay);
+    }
+
+}
+
+
+/* ********************** ONLY MOBILE ********************** */
+
+@media (max-width: 47.9375rem) /* up to 767px */ { 
+
+    .c-full-slider .tns-controls button{
+        position: absolute;
+        left: var(--wrapper-x);
+        bottom: var(--_controls-bottom);
+        z-index: 1;
+        transform: translateY(35%);
+    }
+
+    .c-full-slider .tns-controls button[data-controls="next"] {
+        right: var(--wrapper-x);
+        left: auto;
+    }
+
+}
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) { /* 768px */
+    
+    .c-full-slider .tns-controls{
+        --tns-controls-controls-size: 1.1rem;
+        position: absolute;
+        bottom: var(--_controls-bottom);
+        left: 50%;
+        transform: translate(-50%, 35%);
+        gap: min(calc(var(--controls-gap, 0) * 4), 48rem);
+        z-index: 1;
+    }
+
+    
+}
