@@ -25,14 +25,8 @@
   gap: var(--_gap);
 }
 
-.c-footer__brand{
-  margin-inline: auto;
-  text-align: center;
-}
-
 .c-footer__logo{
   max-width: 24rem;
-  margin-inline: auto;
 }
 
 .c-footer__description{
@@ -135,10 +129,6 @@
     gap: var(--_gap);
   }
 
-  .c-footer__brand{
-    text-align: left;
-    margin-inline: 0;
-  }
 
   .c-footer__logo{
     margin-inline: 0;

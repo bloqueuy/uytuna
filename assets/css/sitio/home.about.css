@@ -4,7 +4,6 @@
 
 /* ABOUT */
 
-
 .c-about {
     --_space: 2.5em;
     --text-fz: var(--fz-000);
@@ -14,7 +13,6 @@
     position: relative;
     background-color: var(--color-primary-600);
 }
-
 
 .c-about__hero {
     position: relative;
@@ -105,7 +103,7 @@
 }
 
 .c-about__picture img {
-    max-width: clamp(28rem, 31.25vw, 60rem);
+    max-width: clamp(28rem, 41.666vw, 65rem);
 }
 
 .c-about__feature .c-about__picture {

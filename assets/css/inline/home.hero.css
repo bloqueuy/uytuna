@@ -39,7 +39,7 @@
     height: auto;
 }
 
-.c-video__btn{
+/* .c-video__btn{
     width: 28px;
     aspect-ratio: 1/1;
     position: absolute;
@@ -53,7 +53,7 @@
 
 .c-video.is-muted .c-video__btn{
     background-image: url(../../images/static/video/sound-off.svg);
-}
+} */
 
 .c-video__btn--right{
     right: 30px;
