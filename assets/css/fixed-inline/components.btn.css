@@ -6,16 +6,16 @@
 
 
 .c-btn{
-  --_fz: var(--fz-400);
+  --_fz: var(--fz-300);
   --_ff: var(--font-alt);
   --_fw: 700;
   --_lh: 1.2;
   --_ls: 1;
-  --_py: 1.2rem;
+  --_py: 1.1rem;
   --_px: 2.4rem;
   --_radius: .3rem;
   --_color: var(--color-neutral-100);
-  --_bg: var(--color-primary);
+  --_bg: var(--color-primary-500);
 
   display: inline-block;
   font-size: var(--btn-fz, var(--_fz));
@@ -30,7 +30,14 @@
   box-shadow: .75rem .75rem 0 0 var(--color-accent);
 }
 
-.c-btn + .u-text{
+.c-btn--light{
+  --_bg: var(--color-neutral-100);
+  --_color: var(--color-primary-500);
+}
+
+.u-text + .c-btn, 
+.u-heading + .c-btn,
+.c-btn + .c-btn{
     margin-top: 1.2em;
 }
 

@@ -1,21 +1,17 @@
 /* ******************************************** */
-/** OBJECTS: STRUCTURE
+/** OBJECTS: GRID
 /* ******************************************** */
 
-.o-wrapper {
-    width: 100%;
-    max-width: var(--wrapper);
-    margin-inline: auto;
-    padding-left: var(--wrapper-x);
-    padding-right: var(--wrapper-x);
+/* GRID */
+
+.o-grid{
+    --_cols: 1;
+    --_gap: 5em;
+
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols, var(--_cols)), 1fr);
+    gap: var(--grid-gap, var(--_gap));
 }
-
-
-.o-wrapper.o-wrapper--header{
-    max-width: var(--header-wrapper);
-}
-
-
 
 
 
@@ -60,6 +56,9 @@
 
 @media (min-width: 61.25rem) { /* 980px */
 
+    .o-grid--col2{
+        --_cols: 2;
+    }
 }
 
 

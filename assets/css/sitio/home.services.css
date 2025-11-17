@@ -1,0 +1,164 @@
+/* ******************************************** */
+/** COMPONENT: SERVICES
+/* ******************************************** */
+
+/* SERVICES */
+
+.c-services {
+    --_top: -28rem;
+    --_space: 5rem;
+
+    position: relative;
+    isolation: isolate;
+    padding-top: 20rem;
+    padding-bottom: var(--section-y, 1rem);
+}
+
+
+.c-services__background-image {
+    position: absolute;
+    top: var(--_top);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/images/temp/home/service-bg.png");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: 2;
+}
+
+
+.c-services__content {
+    position: relative;
+    text-align: center;
+    z-index: 3;
+}
+
+.c-services__title {
+    font-size: clamp(8rem, 7.638vw, 11rem);
+    color: var(--color-neutral-100);
+    font-family: var(--font-alt);
+    font-weight: 700;
+}
+
+
+.c-services__features {
+    --text-fz: var(--fz-000);
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: var(--_space);
+}
+
+.c-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.c-features__icon {
+    --_size: 7.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--_size);
+    height: var(--_size);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+.c-features__title {
+    font-size: var(--fz-400);
+    color: var(--color-primary-500);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    margin-top: .5em;
+}
+
+.c-features__title+.c-features__description {
+    margin-top: .75em;
+}
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) {
+    /* 980px */
+
+    .c-services {
+        --_top: -34rem;
+    }
+
+    .c-services__content {
+        text-align: left;
+    }
+
+    .c-services__features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--_space);
+    }
+
+    .c-features {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) {
+    /* 1200px */
+}
+
+@media (min-width: 75rem) and (min-height: 45rem) {
+    /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) {
+    /* 1400px */
+}
+
+@media (min-width: 87.5rem) and (min-height: 49.375rem) {
+    /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) {
+    /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) {
+    /* 1600px, 790px */
+}
+
+@media (min-width: 100rem) and (min-height: 56.25rem) {
+    /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) {
+    /* 1800px */
+}
+
+@media (min-width: 112.5rem) and (min-height: 56.25rem) {
+    /* 1800px, 900px */
+}

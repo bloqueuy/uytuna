@@ -1,22 +1,87 @@
 /* ******************************************** */
-/** OBJECTS: STRUCTURE
+/** COMPONENT: DUMMY
 /* ******************************************** */
 
-.o-wrapper {
-    width: 100%;
-    max-width: var(--wrapper);
-    margin-inline: auto;
-    padding-left: var(--wrapper-x);
-    padding-right: var(--wrapper-x);
+/* DUMMY */
+
+.c-footer{
+  --_fz: var(--fz-000);
+  --_bg: var(--color-primary-500);
+  --_color: var(--color-neutral-100);
+  --_gap: 3.2rem;
+  --_space-y: .75em;
+
+  background-color: var(--_bg);
+  color: var(--_color);
+  font-size: var(--_fz);
+  margin-top: var(--section-y);
+}
+
+.c-footer__wrapper, 
+.c-footer__nav{
+  --_cols: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--_cols), 1fr);
+  gap: var(--_gap);
+}
+
+.c-footer__brand{
+  margin-inline: auto;
+  text-align: center;
+}
+
+.c-footer__logo{
+  max-width: 24rem;
+  margin-inline: auto;
+}
+
+.c-footer__description{
+  margin-top: var(--_space-y);
+}
+
+.c-footer__title{
+  font-size: var(--fz-300);
+  font-weight: 700;
+  font-family: var(--font-alt);
+}
+
+.c-footer__item{
+  margin-top: var(--_space-y);
+}
+
+.c-footer__link img{
+  max-width: 2rem;
+  width: 100%;
+  height: 100%;
 }
 
 
-.o-wrapper.o-wrapper--header{
-    max-width: var(--header-wrapper);
+.c-footer__copyright{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-footer__sublist{
+  display: flex;
+  gap: 1.2rem;
+}
+
+.c-footer__sublist > li:not(:last-child)::after {
+  content: '|';
+  margin-left: 0.6rem;
 }
 
 
+@media (hover: hover) {
+  .c-footer__link:is(:hover, :focus) {
+    color: var(--color-secondary);
+  }
 
+  .c-footer__link img:is(:hover, :focus) {
+    opacity: .8;
+  }
+}
 
 
 /* ********************** SHORT MOBILE ********************** */
@@ -59,6 +124,30 @@
 /* ********************** de Tablet a DESKTOP ********************** */
 
 @media (min-width: 61.25rem) { /* 980px */
+
+  .c-footer__wrapper, 
+  .c-footer__nav{
+    --_cols: 2;
+  }
+
+  .c-footer__wrapper{
+    --_gap: 8em;
+    gap: var(--_gap);
+  }
+
+  .c-footer__brand{
+    text-align: left;
+    margin-inline: 0;
+  }
+
+  .c-footer__logo{
+    margin-inline: 0;
+  }
+  
+  
+  .c-footer__description{
+    margin-top: var(--_space-y);
+  }
 
 }
 

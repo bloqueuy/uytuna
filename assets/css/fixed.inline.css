@@ -17,6 +17,7 @@
 /* Objects */
 @import url(fixed-inline/objects.structure.css);
 @import url(fixed-inline/objects.section.css);
+@import url(fixed-inline/objects.grid.css);
 
 
 /* Components */
@@ -24,6 +25,8 @@
 @import url(fixed-inline/components.links.css);
 @import url(fixed-inline/components.nav.css);
 @import url(fixed-inline/components.header.css);
+@import url(fixed-inline/components.footer.css);
+
 
 
 

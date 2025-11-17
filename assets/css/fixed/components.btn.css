@@ -1,15 +1,17 @@
 /* ******************************************** */
-/** COMPONENT: DUMMY
+/** COMPONENT: BTNs
 /* ******************************************** */
 
-/* DUMMY */
-
-
+/* BTNS */
 
 @media (hover: hover) {
-  .c-btn:hover {
+  .c-btn:is(:hover, :focus){
     background-color: var(--color-secondary);
     box-shadow: 0 0 0 0 var(--color-accent);
+  }
+
+  .c-btn:is(:hover, :focus).c-btn--light {
+    color: var(--color-neutral-100);
   }
 }
 

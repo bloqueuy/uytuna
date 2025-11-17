@@ -20,9 +20,9 @@
   --_fz: var(--fz-800);
   --_ff: var(--font-alt);
   --_fw: 700;
-  --_lh: 4.2rem;
+  --_lh: 1.2;
   --_ls: 1;
-  --_color: var(--color-primary);
+  --_color: var(--color-primary-500);
 
   font-size: var(--heading-fz, var(--_fz));
   font-family: var(--heading-ff, var(--_ff));

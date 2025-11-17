@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
 </head>
@@ -98,28 +98,14 @@
     </div> <!-- c-hero -->
 
     <main>
-        <!-- <section class="c-about">
-            <div class="o-wrapper o-section">
-
-                <div class="c-about__content">
-
-                  
-                </div>
-
-
-
-            </div>
-        </section> -->
-
         <section class="c-about">
 
-            <!-- Hero Text (solo texto) -->
             <div class="c-about__hero">
-                <picture class="c-about__background-image c-pic c-pic--cover">
-                    <img src="/assets/images/static/home/about-hero-bg.png" alt="imagen de fondo con un faro iluminado">
-                </picture>
+                <div class="c-about__background-image c-about__background-image--hero c-pic c-pic--cover"
+                    aria-hidden="true">
+                </div>
 
-                <div class="o-wrapper o-section">
+                <div class="o-wrapper">
 
                     <div class="c-about__content c-about__content--inline c-about__content--col1">
 
@@ -127,7 +113,7 @@
 
                         <div>
 
-                            <h2 class="u-heading u-heading--sm">La riqueza del océano en nuestras manos</h2>
+                            <h2 class="u-heading u-heading--xs">La riqueza del océano en nuestras manos</h2>
                             <p class="u-text">
                                 De la inmensidad del océano a tu mesa, en UYTUNA transformamos la fuerza del mar en una
                                 experiencia de sabor y calidad. Somos una empresa uruguaya especializada en la
@@ -145,47 +131,192 @@
                                 UYTUNA
                                 se posiciona como una marca pionera e innovadora en el sector del atún en Uruguay.</p>
 
-                            <a href="/" class="c-btn">Marca Uytuna</a>
+                            <a href="/" class="c-btn c-btn--light">Marca Uytuna</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Sección con texto e imagen -->
+    
             <div class="c-about__feature">
-                <div class="o-wrapper o-section">
-                    <div class="c-about__content c-about__grid">
-
-
+                <div class="o-wrapper">
+                    <div class="c-about__grid">
                         <picture class="c-about__picture c-pic">
-                            <img src="/assets/images/static/home/about-hand-world.jpg"
-                                alt="una mano sosteniendo el mundo">
+                            <img src="/assets/images/temp/home/about-hand-world.jpg">
                         </picture>
 
-                        <h3 class="c-about__title">Innovation in food</h3>
-
-
+                        <div class="c-about__content">
+                            <h2 class="c-about__title">Innovation in food</h2>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Valores (4 columnas) -->
-            <div class="c-about__values">
-                <div class="container">
-                    <h2>Bienvenido/a a la familia UYTUNA</h2>
-                    <div class="c-about__values-grid">
-                        <!-- 4 cards de valores -->
+            <div class="c-about__story">
+                <div class="c-about__background-image c-about__background-image--story c-pic c-pic--cover"
+                    aria-hidden="true">
+                </div>
+
+                <div class="o-wrapper o-section">
+
+                    <div class="c-about__grid">
+                        <div class="c-about__content c-about__content--inline">
+
+                            <a href="/expansion/" class="c-about__link">Expansión</a>
+
+                            <div>
+                                <h2 class="u-heading u-heading--xs">Lideramos una nueva forma de saborear el atún</h2>
+                                <p class="u-text">
+                                    En UYTUNA innovamos en la forma de consumir atún, especializándonos en la producción
+                                    de
+                                    pouches. Nuestra visión es clara: Proporcionar a nuestros clientes una solución
+                                    innovadora de alta calidad, que responda a las necesidades de los consumidores
+                                    modernos.
+                                </p>
+                                <p class="u-text">
+                                    Estos pouches mantienen la frescura y el sabor del atún, y son ideales para comidas
+                                    rápidas y saludables. Desde la captura hasta el envasado, cada paso refleja nuestro
+                                    respeto por el océano y el esfuerzo de quienes hacen posible una conserva
+                                    excepcional,
+                                    un producto fresco, como recién salido del océano.
+                                </p>
+
+                                <a href="/marca-blanca/" class="c-btn c-btn--light">Marca Blanca</a>
+                            </div>
+                        </div>
+                        <picture class="c-about__picture c-pic">
+                            <img src="/assets/images/temp/home/about-product.png">
+                        </picture>
                     </div>
                 </div>
             </div>
+
+        </section>
+
+
+        <section class="c-services">
+            <div class="c-services__background-image c-pic c-pic--cover" aria-hidden="true"></div>
+
+            <div class="o-wrapper c-services__content o-grid o-grid--col2">
+
+                <div>
+
+                    <h2 class="u-heading u-heading--sm">Bienvenido/a <br>
+                        a la familia <br>
+                        UYTUNA</h2>
+                    <a href="/expansion/" class="c-btn">Expansión</a>
+                </div>
+
+
+                <ul class="c-services__features ">
+
+                    <li class="c-services__feature c-features">
+                        <picture class="c-features__icon">
+                            <img src="/assets/images/temp/home/icons/uy-icon__compromiso.png" alt="">
+                        </picture>
+                        <h3 class="c-features__title">Compromiso</h3>
+                        <p class="c-features__description u-text">Comprometidos con los resultados y la sostenibilidad,
+                            cumplimos con los objetivos, ofreciendo mayor productividad a menor coste.</p>
+                    </li>
+
+                    <li class="c-services__feature c-features">
+                        <picture class="c-features__icon">
+
+                            <img src="/assets/images/temp/home/icons/uy-icon__excelencia.png" alt="">
+                        </picture>
+                        <h3 class="c-features__title">Excelencia</h3>
+                        <p class="c-features__description u-text">Ofrecemos eficiencia y competitividad, siempre
+                            orientados a ofrecer un producto y un servicio de máxima calidad.</p>
+                    </li>
+
+                    <li class="c-services__feature c-features">
+                        <picture class="c-features__icon">
+
+                            <img src="/assets/images/temp/home/icons/uy-icon__flexibilidad.png" alt="">
+                        </picture>
+                        <h3 class="c-features__title">Flexibilidad</h3>
+                        <p class="c-features__description u-text">Nos adaptamos con rapidez a las distintas necesidades
+                            de cada uno de nuestros clientes, manteniendo una respuesta integral satisfactoria.</p>
+                    </li>
+
+                    <li class="c-services__feature c-features">
+
+                        <picture class="c-features__icon">
+                            <img src="/assets/images/temp/home/icons/uy-icon__innovacion.png" alt="">
+                        </picture>
+
+                        <h3 class="c-features__title">Innovación</h3>
+                        <p class="c-features__description u-text">Integramos la última tecnología en nuestros procesos,
+                            apostando por los sistemas industriales más avanzados, seguros y sostenibles.</p>
+                    </li>
+                </ul>
+            </div>
+
+
         </section>
     </main>
 
 
     <!-- !FOOTER -->
     <footer class="c-footer">
-        <div class="c-footer__wrapper">
-            <p class="c-footer__text">Uytuna - Todos los derechos reservados</p>
+        <div class="c-footer__wrapper o-wrapper o-section">
+
+            <div class="c-footer__brand">
+                <img class="c-footer__logo" src="/assets/images/static/logo-blanco.png" alt="Uytuna">
+
+                <p class="c-footer__description">
+                    Desarrollamos soluciones alimentarias inteligentes, rentables y sostenibles, adaptadas a las
+                    exigencias del mercado global.
+                </p>
+
+                <p class="c-footer__description">
+                    Referentes en Uruguay en la producción y envasado de atún en pouch, un formato innovador que
+                    preserva intactos el sabor, la textura y las propiedades nutricionales.
+                </p>
+            </div>
+
+            <nav class="c-footer__nav">
+                <h2 class="u-hidden-for-seo">Navegación de pie de página</h2>
+
+                <ul class="c-footer__list">
+                    <li>
+                        <h3 class="c-footer__title">Conócenos</h3>
+                    </li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="/">Inicio</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="/la-compania/">La Compañía</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="/marca-blanca/">Marca Blanca</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="/marca-uytuna/">Marca Uytuna</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="/expansion/">Expansión</a></li>
+
+
+                </ul>
+
+                <ul class="c-footer__list">
+                    <li>
+                        <h3 class="c-footer__title">Contacta</h3>
+                    </li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="https://maps.app.goo.gl/WFFWH3ha1Lr47uCT8" target="_blank">Parque Industrial Juan Lacaze, Oficina
+                            35, E.Colonia - Uruguay</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="tel:+59896585444">+598 96585444</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="mailto:info@uytuna.com">info@uytuna.com</a></li>
+                    <li class="c-footer__item"><a class="c-footer__link" href="https://www.instagram.com/uytuna_/?igsh=cHV6Z2N1b3QxZXV5#" target="_blank"><img class="u-tap-size" src="/assets/images/temp/home/icons/icon__instagram.svg" alt="Uytuna" title="Seguinos en Instagram" aria-label="Seguinos en Instagram"></a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="c-footer__copyright o-wrapper o-section">
+            <p class="u-text">© UYTUNA 2025</p>
+
+            <nav class="c-footer__submenu">
+                <h2 class="u-hidden-for-seo">Información legal</h2>
+                <ul class="c-footer__sublist">
+                    <li><a href="/" class="c-footer__link">Aviso Legal</a></li>
+                    <li><a href="/" class="c-footer__link">Política de Cookies</a></li>
+                    <li><a href="/" class="c-footer__link">Política de privacidad</a></li>
+                </ul>
+            </nav>
         </div>
     </footer>
 

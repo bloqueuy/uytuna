@@ -7,7 +7,8 @@
     /* ! COLORS */
 
     /* * Primary */
-    --color-primary: #001432;
+    --color-primary-500: #001432;
+    --color-primary-600: #000D2E;
     --color-primary-hsl: 216 100% 10%;
   
     --color-secondary: #FF6065;
@@ -19,7 +20,6 @@
     --color-neutral-100: #FFFFFF;
     --color-neutral-900: #1A1A1A;
 
-
     --color-neutral-100-hsl: 0 0% 100%;
-    --color-neutral-900-hsl: 0 0% 0%;
+    --color-neutral-900-hsl: 0 0% 10%;
 }

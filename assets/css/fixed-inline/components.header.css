@@ -17,7 +17,7 @@
     width: 100%;
     z-index: 9999;
     background-color: var(--color-neutral-100);
-    box-shadow: 0 .2rem .8rem rgba(0, 0, 0, 0.05) hsl(var(--color-primary-hsl) / 0.05);
+    box-shadow: 0 .2rem .8rem hsl(var(--color-neutral-900-hsl) / 7%);
     transition: background-color 400ms ease-out, box-shadow 400ms ease-out, opacity 400ms ease-out, visibility 400ms ease-out;
 }
 
@@ -107,7 +107,7 @@
         left: 50%;
         top: 50%;
         margin: 0;
-        background-color: var(--bars-color, var(--color-primary));
+        background-color: var(--bars-color, var(--color-primary-500));
         rotate: var(--bar-rotate);
         translate: -50% var(--bar-translate);
     }

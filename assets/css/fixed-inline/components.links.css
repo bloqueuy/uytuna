@@ -10,7 +10,7 @@
   --_fw: 400;
   --_lh: 1.2;
   --_ls: 1;
-  --_color: var(--color-primary);
+  --_color: var(--color-primary-500);
 
   display: inline-block;
   font-size: var(--link-fz, var(--_fz));

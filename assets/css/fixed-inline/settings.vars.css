@@ -4,10 +4,10 @@
 
 :root {
     --font: 'Poppins', sans-serif;
-    --font-alt: 'Playfair', serif;
+    --font-alt: 'Playfair Display', serif;
 
     /* Sizes */
-    --space-x: 1.6rem;
+    --space-x: 2.6rem;
     --space-x-n: calc(var(--space-x) * -1);
     --separator: 4rem;
 
