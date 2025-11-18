@@ -11,7 +11,8 @@
 
 .c-media-content__container{
     position: relative;
-    display: inline-block;
+    display: block;
+    width: 100%;
 }
 
 .c-media-content__poster{
@@ -71,7 +72,7 @@
 
 
 
-/* ********************** de Mobile a TABLET ********************** */
+/* ********************** de Mobile a TABLET ********************** */ 
 
 @media (min-width: 48rem) { /* 768px */
 }

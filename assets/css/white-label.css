@@ -1,0 +1,12 @@
+/* ******************************************** */
+/** WHITE LABEL
+/* ******************************************** */
+
+/* Components */
+@import url(sitio/components.media-content.css);
+@import url(sitio/components.overlay-title.css);
+
+/* Page */
+@import url(sitio/white-label.generic.css);
+@import url(sitio/white-label.closing.css);
+

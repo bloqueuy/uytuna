@@ -74,7 +74,7 @@
 
     :root {
         --wrapper: 150rem;
-        --wrapper-x: clamp(var(--space-x), 3.472vw, 5rem);
+        --wrapper-x: clamp(var(--space-x), 10.416vw, 15rem);
         --header-wrapper: clamp(var(--space-x), 3.472vw, 5rem);
         --header: 7rem;
         --hero-offset: -3;

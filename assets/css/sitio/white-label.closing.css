@@ -1,0 +1,235 @@
+/* ******************************************** */
+/** COMPONENT: CLOSING
+/* ******************************************** */
+
+/* CLOSING */
+
+.c-closing {
+    position: relative;
+    isolation: isolate;
+    height: auto;
+    padding-bottom: var(--section-y);
+}
+
+.c-closing__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/images/temp/white-label/white-label@closing-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.c-closing__background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-neutral-100, #ffffff);
+    clip-path: polygon(0 7%, 0 0, 100% 0);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.c-closing__content {
+    position: relative;
+    top: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    z-index: 2;
+}
+
+.c-closing__title {
+    margin-inline: auto;
+    text-align: center;
+    max-width: 15em;
+}
+
+.c-closing__list {
+    display: grid;
+    gap: 5em;
+}
+
+.c-closing__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.c-closing__item-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-closing__item-header img{
+    max-width: 10rem;
+}
+
+.c-closing__item-header span {
+    font-size: 12rem;
+    color: var(--color-neutral-500);
+    font-family: var(--font-alt);
+    font-weight: 700;
+}
+
+
+.c-closing__item-header img {
+    --_size: 7.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--_size);
+    height: var(--_size);
+    background-color: var(--color-accent);
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+.c-closing__item-title {
+    font-size: var(--fz-400);
+    color: var(--color-primary-500);
+    font-family: var(--font-alt);
+    font-weight: 700;
+    margin-top: .5em;
+}
+
+.c-closing__item-description {
+    font-size: var(--fz-000);
+}
+
+.c-closing__item-title+.c-closing__item-description {
+    margin-top: .75em;
+}
+
+
+.c-closing__text {
+    font-size: var(--fz-300);
+    font-family: var(--font-alt);
+    color: var(--color-primary-500);
+    font-weight: 700;
+    text-align: center;
+}
+
+.c-closing__text + .c-btn {
+    margin-top: 2em;
+}
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) {
+    /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) {
+    /* 767px, 730px */
+}
+
+
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) {
+    /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) {
+    /* 768px */
+}
+
+@media (min-width: 48rem) and (orientation: portrait) {}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) {
+    /* 980px */
+
+    .c-closing__background::before {
+        clip-path: polygon(0 25%, 0 0, 100% 0);
+    }
+
+    .c-closing__list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) {
+    /* 1200px */
+}
+
+@media (min-width: 75rem) and (min-height: 45rem) {
+    /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) {
+    /* 1400px */
+}
+
+@media (min-width: 87.5rem) and (min-height: 49.375rem) {
+    /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) {
+    /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) {
+    /* 1600px, 790px */
+}
+
+@media (min-width: 100rem) and (min-height: 56.25rem) {
+    /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) {
+    /* 1800px */
+}
+
+@media (min-width: 112.5rem) and (min-height: 56.25rem) {
+    /* 1800px, 900px */
+}

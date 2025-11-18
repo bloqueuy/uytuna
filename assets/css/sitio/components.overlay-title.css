@@ -11,7 +11,7 @@
     --_offset-b: -7rem;
     --_left: 4rem;
     --_color: var(--color-neutral-100);
-    --_fz: clamp(3rem, 4.16vw, 6rem);
+    --_fz: clamp(3rem, 3.888vw, 5.6rem);
     --_ff: var(--font-alt);
     --_fw: 700;
 
@@ -34,9 +34,9 @@
 
 .c-overlay-title__text{
     position: absolute;
-    width: min-content;
     top: 50%;
     left: 50%;
+    width: max-content;
     color: var(--_color);
     font-size: var(--_fz);
     font-family: var(--_ff);
