@@ -35,7 +35,7 @@
 
 .c-about__story {
     position: relative;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-block: var(--section-y, 8rem);
 }
 
