@@ -35,7 +35,6 @@
 
 .c-about__story {
     position: relative;
-    isolation: isolate;
     min-height: 90vh;
     padding-block: var(--section-y, 8rem);
 }
@@ -99,7 +98,7 @@
 }
 
 .c-about__story .c-about__picture {
-    z-index: 1;
+    z-index: 2;
 }
 
 .c-about__picture img {

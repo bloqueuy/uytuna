@@ -1,0 +1,146 @@
+/* ******************************************** */
+/** COMPONENT: OVERLAY TITLE
+/* ******************************************** */
+
+/* OVERLAY TITLE */
+
+
+.c-overlay-title{
+    --_size: clamp(30rem, 38.194vw, 55rem);
+    --_offset-t: -7rem;
+    --_offset-b: -7rem;
+    --_left: 4rem;
+    --_color: var(--color-neutral-100);
+    --_fz: clamp(3rem, 4.16vw, 6rem);
+    --_ff: var(--font-alt);
+    --_fw: 700;
+
+    position: relative;
+    width: 100%;
+    max-width: var(--_size);
+    margin-top: var(--_offset-t);
+    margin-left: var(--_left);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.c-overlay-title__background{
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+}
+
+.c-overlay-title__text{
+    position: absolute;
+    width: min-content;
+    top: 50%;
+    left: 50%;
+    color: var(--_color);
+    font-size: var(--_fz);
+    font-family: var(--_ff);
+    font-weight: var(--_fw);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  
+}
+
+
+.c-overlay-title--bottom{
+    --_offset-t: 0rem;
+    margin-bottom: var(--_offset-b);
+}
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) { /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) { /* 767px, 730px */
+}
+
+ 
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) { /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) { /* 768px */
+}
+@media (min-width: 48rem) and (orientation: portrait) {
+}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) { /* 980px */
+    .c-overlay-title{
+        --_offset-t: -40rem;
+        --_offset-b: -20rem;
+        --_left: 50%;
+    }
+
+    .c-overlay-title--bottom{
+        --_offset-t: -20rem;
+        margin-bottom: var(--_offset-b);
+        top: 40rem;
+    }
+
+
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) { /* 1200px */
+}
+@media (min-width: 75rem) and (min-height: 45rem) { /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) { /* 1400px */
+}
+@media (min-width: 87.5rem) and (min-height: 49.375rem) { /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) { /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) { /* 1600px, 790px */
+}
+@media (min-width: 100rem) and (min-height: 56.25rem) { /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) { /* 1800px */
+}
+@media (min-width: 112.5rem) and (min-height: 56.25rem) { /* 1800px, 900px */
+}

@@ -21,3 +21,9 @@
 .u-bg{
     background-color: var(--color-neutral-200);
 }
+
+
+.u-relative{
+    position: relative;
+    isolation: isolate;
+}

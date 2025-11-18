@@ -18,10 +18,10 @@
 */
 
 .u-text{
-    --_fz: var(--fz-100);
+    --_fz: var(--fz-000);
     --_fw: 400;
     --_lh: 1.4;
-    --_ls: -0.03em;
+    --_ls: 0.01em;
     --_max-w: none;
     
     font-size: var(--text-fz, var(--_fz));

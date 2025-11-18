@@ -4,13 +4,12 @@
 
 /* SERVICES */
 
-
 .c-services {
     --_top: -28rem;
     --_space: 5rem;
+
     position: relative;
-    isolation: isolate;
-    padding-top: 20rem;
+    /* padding-top: 20rem; */
     padding-bottom: var(--section-y, 1rem);
 }
 
@@ -25,7 +24,8 @@
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: 1;
+    pointer-events: none;
 }
 
 

@@ -15,6 +15,7 @@
 
 
 
+
 /* ********************** SHORT MOBILE ********************** */
 
 @media (max-width: 22.4375rem) { /* 359px */
@@ -56,8 +57,11 @@
 
 @media (min-width: 61.25rem) { /* 980px */
 
-    .o-grid--col2{
+    .o-grid{
         --_cols: 2;
+        align-items: var(--grid-align, center);
+        justify-content: var(--grid-justify, center);
+  
     }
 }
 

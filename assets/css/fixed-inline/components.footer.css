@@ -14,7 +14,7 @@
   background-color: var(--_bg);
   color: var(--_color);
   font-size: var(--_fz);
-  margin-top: var(--section-y);
+  /* margin-top: var(--section-y); */
 }
 
 .c-footer__wrapper, 
