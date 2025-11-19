@@ -1,0 +1,29 @@
+.c-expansion__banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.c-expansion__banner-wrapper {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 2;
+    -webkit-mask-image: url("/assets/images/temp/generic/figure-back-video-mask.svg");
+    mask-image: url("/assets/images/temp/generic/figure-back-video-mask.svg");
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center;
+    mask-position: center;
+}
+
+.c-expansion__banner-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 0;
+}

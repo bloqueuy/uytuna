@@ -45,6 +45,10 @@
     padding: .2rem;
 }
 
+.c-media-content__pic{
+    order: 2;
+}   
+
 /* ********************** SHORT MOBILE ********************** */
 
 @media (max-width: 22.4375rem) { /* 359px */
@@ -86,6 +90,10 @@
 
 @media (min-width: 61.25rem) { /* 980px */
     .c-media-content{
+        order: inherit;
+    }
+
+    .c-media-content__pic{
         order: inherit;
     }
 }

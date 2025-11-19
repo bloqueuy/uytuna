@@ -35,7 +35,7 @@
 .c-overlay-title__text{
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 55%;
     width: max-content;
     color: var(--_color);
     font-size: var(--_fz);

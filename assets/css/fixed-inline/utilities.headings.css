@@ -32,7 +32,6 @@
   color: var(--heading-color, var(--_color));
 }
 
-
 .u-heading--sm{
   --_fz: var(--fz-700);
 }
@@ -41,6 +40,34 @@
   --_fz: var(--fz-600);
 }
 
-.u-heading + .u-text{
-  margin-top: 1.2em;
+.u-heading--center{
+  text-align: center;
+  margin-inline: auto;
+}
+
+.u-heading + .u-text, 
+.u-subheading + .u-text, 
+.u-heading + .u-subheading{
+  margin-top: 1.5em;
+}
+
+.u-subheading{
+  --_fz: var(--fz-300);
+  --_ff: var(--font-alt);
+  --_fw: 700;
+  --_lh: 1.2;
+  --_ls: 1;
+  --_color: var(--color-primary-500);
+
+  font-size: var(--subheading-fz, var(--_fz));
+  font-family: var(--subheading-ff, var(--_ff));
+  font-weight: var(--subheading-fw, var(--_fw));
+  line-height: var(--subheading-lh, var(--_lh));
+  letter-spacing: var(--subheading-ls, var(--_ls));
+  color: var(--subheading-color, var(--_color));
+}
+
+.u-subheading span{
+  --_color: var(--color-accent);
+  color: var(--subheading-span-color, var(--_color));
 }
