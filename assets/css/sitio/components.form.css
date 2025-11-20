@@ -77,20 +77,16 @@
 }
 
 .c-form__error-message{
-    color: var(--_error-color);
-    font-size: var(--fz-200);
-    display: none;
+    color: var(--color-error);
+    font-size: var(--fz-100);
+    display: block;
 }
 
 .c-form__group--error .c-form__error-message{
     display: block;
 }
 
-.c-form__input--error,
-.c-form__textarea--error{
-    border-color: var(--_error-color);
-    box-shadow: 0 0 0 0.1rem hsl(var(--_error-color) / 20%);
-}
+
 
 .c-form__error {
     color: var(--color-error);

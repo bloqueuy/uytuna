@@ -14,8 +14,6 @@
     --color-secondary: #FF6065;
     --color-accent: #41D2BE;
 
-    --e-global-color-accent: #41D2BE;
-
     /* * Neutral */
     --color-neutral-100: #FFFFFF;
     --color-neutral-500: #808080;
@@ -24,6 +22,6 @@
     --color-neutral-100-hsl: 0 0% 100%;
     --color-neutral-900-hsl: 0 0% 10%;
 
-    --color-error: #FA7C7C;
+    --color-error: #fe3b3b;
 
-}
+} 
