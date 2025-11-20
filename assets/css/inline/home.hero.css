@@ -27,7 +27,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 0;
+    top: -8rem;
     left: 0;
     width: 100%;
     height: 100%;
@@ -132,4 +132,89 @@
         -webkit-transform: translate(-50%, -50%) rotate(360deg);
         transform: translate(-50%, -50%) rotate(360deg)
     }
+}
+
+
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) { /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) { /* 767px, 730px */
+}
+
+ 
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) { /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) { /* 768px */
+}
+@media (min-width: 48rem) and (orientation: portrait) {
+}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) { /* 980px */
+    .c-hero__content {
+        top: -15rem;
+    }
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) { /* 1200px */
+}
+@media (min-width: 75rem) and (min-height: 45rem) { /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) { /* 1400px */
+}
+@media (min-width: 87.5rem) and (min-height: 49.375rem) { /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) { /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) { /* 1600px, 790px */
+}
+@media (min-width: 100rem) and (min-height: 56.25rem) { /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) { /* 1800px */
+}
+@media (min-width: 112.5rem) and (min-height: 56.25rem) { /* 1800px, 900px */
 }
