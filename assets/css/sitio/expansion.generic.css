@@ -1,3 +1,15 @@
+.c-media-content__container {
+    position: relative;
+    width: 100%;
+}
+
+.c-expansion__banner {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: block;
+}
+
 .c-expansion__banner img {
     display: block;
     width: 100%;
@@ -6,7 +18,10 @@
 
 .c-expansion__banner-wrapper {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
