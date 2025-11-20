@@ -1,0 +1,198 @@
+/* ******************************************** */
+/** COMPONENT: DUMMY
+/* ******************************************** */
+
+/* DUMMY */
+.c-contact {
+    --_height: 250vh;
+    position: relative;
+    width: 100%;
+    height: var(--_height);
+    padding-bottom: 36.25%;
+    overflow: hidden;
+}
+
+.c-contact__header {
+    margin-inline: auto;
+    text-align: center;
+}
+
+.c-contact__background {
+    position: absolute;
+    inset: 0;
+    background-image: url('/assets/images/temp/contact/contact@img-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+    /* clip-path: polygon(100% 0, 100% 0, 0% 25%, 0 100%, 0 100%, 100% 75%); */
+    clip-path: polygon(100% 0, 100% 0, 0% 5%, 0 100%, 0 100%, 100% 95%);
+
+    pointer-events: none;
+}
+
+.c-contact__content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.c-map {
+    width: 100%;
+}
+
+.c-list__item {
+    margin-top: calc(var(--section-y) / 2);
+}
+
+.c-list__subtitle {
+    font-size: var(--fz-200);
+    font-weight: 700;
+    font-family: var(--font-alt);
+    color: var(--color-accent);
+}
+
+
+.c-list__text,
+.c-list__link {
+    display: block;
+    font-size: var(--fz-000);
+    font-weight: 400;
+    color: var(--color-primary-500);
+    margin-top: .5em;
+}
+
+.c-list__text {
+    margin-top: 1em;
+}
+
+.c-list__link img {
+    margin-top: .75em;
+    max-width: 2rem;
+}
+
+
+@media (hover: hover) {
+    .c-list__link:hover {
+        color: var(--color-secondary);
+    }
+
+    .c-list__link:hover img {
+        opacity: .6;
+    }
+}
+
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) {
+    /* 359px */
+}
+
+
+
+
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) {
+    /* 767px, 730px */
+}
+
+
+
+
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) {
+    /* 500px, 767px */
+}
+
+
+
+
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) {
+    /* 768px */
+}
+
+@media (min-width: 48rem) and (orientation: portrait) {}
+
+
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) {
+    /* 980px */
+
+    .c-contact {
+        --_height: 200vh;
+    }
+
+    .c-contact__background {
+        clip-path: polygon(100% 0, 100% 0, 0% 15%, 0 100%, 0 100%, 100% 85%);
+
+    }
+}
+
+
+
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) {
+    /* 1200px */
+
+    .c-contact {
+        --_height: 125vh;
+    }
+}
+
+@media (min-width: 75rem) and (min-height: 45rem) {
+    /* 1200, 720 */
+}
+
+
+
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) {
+    /* 1400px */
+}
+
+@media (min-width: 87.5rem) and (min-height: 49.375rem) {
+    /* 1400px, 790px */
+}
+
+
+
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) {
+    /* 1600px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) {
+    /* 1600px, 790px */
+}
+
+@media (min-width: 100rem) and (min-height: 56.25rem) {
+    /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) {
+    /* 1800px */
+}
+
+@media (min-width: 112.5rem) and (min-height: 56.25rem) {
+    /* 1800px, 900px */
+}

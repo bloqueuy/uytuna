@@ -51,6 +51,7 @@
   margin-top: 1.5em;
 }
 
+
 .u-subheading{
   --_fz: var(--fz-300);
   --_ff: var(--font-alt);
@@ -67,7 +68,11 @@
   color: var(--subheading-color, var(--_color));
 }
 
-.u-subheading span{
+.u-subheading span,
+.u-heading span{
   --_color: var(--color-accent);
   color: var(--subheading-span-color, var(--_color));
 }
+
+
+

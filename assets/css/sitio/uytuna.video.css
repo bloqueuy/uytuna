@@ -4,35 +4,40 @@
 
 /* VIDEO */
 
-.c-media-content__poster img {
-    display: block;
+.c-video-polygon {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 0;
+    padding-bottom: 36.25%;
+    overflow: hidden;
+    clip-path: polygon(0 0, 0% 0, 100% 25%, 100% 100%, 100% 100%, 0 75%);
 }
 
-.c-media-content__video-wrapper {
+.c-video-polygon--invert {
+    clip-path: polygon(100% 0, 100% 0, 0% 25%, 0 100%, 0 100%, 100% 75%);
+}
+
+.c-video-polygon__video {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden;
-    z-index: 2;
-    -webkit-mask-image: url("/assets/images/temp/generic/figure-back-video-mask.svg");
-    mask-image: url("/assets/images/temp/generic/figure-back-video-mask.svg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-position: center;
-    mask-position: center;
+    object-fit: cover;
 }
 
-.c-media-content__video {
+.c-video-polygon__image {
+    position: absolute;
+    top: 12rem;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    padding: 0;
+    z-index:  2;
 }
+
+.c-video-polygon__image img {
+    max-width: clamp(28rem, 69.444vw, 100rem);
+}
+
 
 
 

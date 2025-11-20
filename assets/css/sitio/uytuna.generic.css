@@ -1,0 +1,5 @@
+.c-pouches__title{
+    text-align: right;
+    max-width: var(--wrapper);
+    padding-right: var(--wrapper-x);
+}

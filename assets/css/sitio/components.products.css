@@ -4,8 +4,11 @@
 
 /* PRODUCTS */
 
-
 .c-products{
+    margin-block: calc(var(--section-y) * 2);
+}
+
+.c-products__list{
     --_fz: var(--fz-200);
     position: relative;
     display: grid;
@@ -13,12 +16,21 @@
     margin-top: var(--section-y);
 }
 
-.c-products::before{
+.c-products__list::before{
     content: "Pesos";
     position: absolute;
     top: -3rem;
     font-size: var(--_fz);
     color: var(--color-neutral-900);
+}
+
+.c-products__title{
+    font-size: var(--fz-300);
+    color: var(--color-neutral-900);
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: var(--font-alt);
 }
 
 .c-product__info{
@@ -94,7 +106,7 @@
 
 @media (min-width: 61.25rem) { /* 980px */
 
-    .c-products{
+    .c-products__list{
         grid-template-columns: repeat(4, 1fr);
     }
 }
