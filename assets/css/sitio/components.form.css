@@ -12,8 +12,6 @@
     --_offset-top: calc(var(--_padding-y) * 0);
     --_space: .7em;
     --_radius: 1.6rem;
-    --_error-color: #FA7C7C;
-
 
     --grid-gap: 1rem;
 
@@ -22,9 +20,7 @@
     position: relative;
     margin-top: calc(var(--space-y) * 2);
     font-size: var(--_text-fz);
-
 }
-
 
 .c-form::before{
     content: "";
@@ -48,7 +44,6 @@
     gap: var(--_space);
     margin-top: 1.5em;
 }
-
 
 .c-form__input, 
 .c-form__textarea{
@@ -97,6 +92,62 @@
     box-shadow: 0 0 0 0.1rem hsl(var(--_error-color) / 20%);
 }
 
+.c-form__error {
+    color: var(--color-error);
+    font-size: var(--fz-100);
+    /* display: none; */
+}
+
+.c-form__checkbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25em;
+}
+
+.c-form__checkbox-content {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.c-form__checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.c-form__checkbox-wrapper--error .c-form__checkbox {
+    border: .1rem solid var(--color-error);
+}
+
+.c-form__checkbox-wrapper + .c-form__checkbox-wrapper {
+    margin-top: var(--_space-y);
+}
+
+
+/* checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+.c-form__checkbox {
+    --_size: 1.6rem;
+    width: var(--_size);
+    height: var(--_size);
+    cursor: pointer;
+    background-color: hsl(var(--color-primary-500-hsl) / 10%);
+    border: .1rem solid var(--color-neutral-900);
+}
+
+input:checked~.c-form__checkbox {
+    background-image: url('/assets/images/static/icons/icon-checkbox.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: .1rem solid var(--color-neutral-900);
+}
+
 .c-form__btn{
     width: max-content;
     margin-inline: auto;
@@ -115,6 +166,8 @@
     cursor: not-allowed;
     transform: scale(0.98);
 }
+
+
 
 /* Loading spinner */
 .loading{

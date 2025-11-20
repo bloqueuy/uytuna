@@ -23,4 +23,7 @@
 
     --color-neutral-100-hsl: 0 0% 100%;
     --color-neutral-900-hsl: 0 0% 10%;
+
+    --color-error: #FA7C7C;
+
 }
