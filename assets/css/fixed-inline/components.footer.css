@@ -49,6 +49,10 @@
   height: 100%;
 }
 
+.c-footer__link.is-active{
+  color: var(--color-secondary);
+}
+
 
 .c-footer__copyright{
   display: flex;

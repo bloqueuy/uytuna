@@ -1,0 +1,269 @@
+/* ******************************************** */
+/** SETTINGS: CONTENT
+/* ******************************************** */
+
+/* CONTENT */
+
+.s-content {
+    --_content-margin-t: 1.3em;
+    --_fz: var(--fz-000);
+    --_lh: 1.6;
+    --_link-color: var(--color-primary);
+    --_link-fw: 500;
+
+
+    margin-inline: auto;
+    font-size: var(--content-fz, var(--_fz));
+}
+
+.s-content>*:not(div),
+.s-content>div>* {
+    margin-top: var(--_content-margin-t);
+    line-height: var(--content-lh, var(--_lh));
+}
+
+
+/* ! Links */
+.s-content a {
+    color: var(--content-link-color, var(--_link-color));
+    text-decoration: underline;
+    text-underline-offset: .2em;
+    font-weight: var(--content-link-fw, var(--_link-fw));
+    opacity: 1;
+}
+
+/* ! Headings */
+
+.s-content .u-heading {
+    margin-bottom: calc(var(--section-y)* 0.15);
+}
+
+.s-content h1,
+.s-content h2,
+.s-content h3,
+.s-content h4,
+.s-content h5 {
+    --_fz: var(--fz-800);
+    --_lh: 1.1;
+    --_fw: 700;
+
+    font-size: var(--heading-fz, var(--_fz));
+    font-weight: var(--heading-fw, var(--_fw));
+    line-height: var(--heading-lh, var(--_lh));
+    letter-spacing: var(--heading-ls, -0.03em);
+    color: var(--heading-color, var(--color-neutral-800));
+    max-width: var(--heading-max-w, inherit);
+}
+
+.s-content h1 {
+    --_fz: var(--fz-800);
+}
+
+.s-content h2 {
+    --_fz: var(--fz-700);
+}
+
+.s-content h1~*,
+.s-content h2~*,
+.s-content h3~*,
+.s-content h4~*,
+.s-content h5~*,
+.s-content h6~* {
+    margin-top: 1.5em;
+}
+
+
+
+/* ! Media */
+.s-content img,
+.s-content iframe,
+.s-content .youtube-embed-wrapper {
+    display: block;
+    max-width: var(--img-max-width, 100%);
+    height: auto;
+    margin-top: calc(var(--content-margin-t, var(--_content-margin-t))*1.5);
+}
+
+.s-content img {
+    height: auto !important;
+}
+
+.s-content .youtube-embed-wrapper iframe {
+    margin-block: 0;
+}
+
+
+
+/* ! Lists */
+
+.s-content ul,
+.s-content ol {
+    --_bullet-color: var(--content-bullet-color, var(--color-neutral-500));
+    padding-left: var(--_list-offset);
+}
+
+.s-content li ul,
+.s-content li ol {
+    margin-top: 0.5em;
+}
+
+.s-content li {
+    position: relative;
+    padding-left: var(--_item-offset);
+}
+
+.s-content li:not(:first-child) {
+    margin-top: 0.5em;
+}
+
+.s-content ul {
+    --_list-offset: 0.7em;
+    --_item-offset: 0.5em;
+    --_bullet-size: 0.355em;
+}
+
+.s-content ul li {
+    padding-left: calc(var(--_item-offset) + var(--_bullet-size) * 2);
+}
+
+.s-content ul li::before {
+    content: "";
+    width: var(--_bullet-size);
+    height: var(--_bullet-size);
+    position: absolute;
+    top: 0.7em;
+    left: 0;
+    background-color: var(--_bullet-color);
+    border-radius: 50%;
+}
+
+.s-content ul li a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+.s-content ol {
+    --_list-offset: 2.1em;
+    --_item-offset: 0.25em;
+}
+
+.s-content ol>li {
+    list-style: decimal;
+    list-style-position: outside;
+}
+
+.s-content ol>li::marker {
+    color: var(--_bullet-color);
+    font-weight: 500;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+/* ********************** MEDIA HOVER ********************** */
+
+@media (hover: hover) {
+
+    /* ! Links */
+    .s-content a:hover {
+        opacity: .8;
+    }
+
+    .s-content ul li a:is(:hover, :focus-visible) {
+        color: var(--color-primary);
+    }
+
+}
+
+
+/* ********************** SHORT MOBILE ********************** */
+
+@media (max-width: 22.4375rem) {
+    /* 359px */
+}
+
+/* ********************** TALL MOBILE PORTRAIT ********************** */
+
+@media (max-width: 47.9375rem) and (min-height: 45.625rem) {
+    /* 767px, 730px */
+}
+
+/* ********************** MOBILE LANDSCAPE ********************** */
+
+@media (orientation: landscape) and (min-width: 31.25rem) and (max-width: 47.9375rem) {
+    /* 500px, 767px */
+}
+
+/* ********************** de Mobile a TABLET ********************** */
+
+@media (min-width: 48rem) {
+    /* 768px */
+
+}
+
+@media (min-width: 48rem) and (orientation: portrait) {}
+
+
+/* ********************** de Tablet a DESKTOP ********************** */
+
+@media (min-width: 61.25rem) {
+    /* 980px */
+
+    .s-content {
+        margin-block: calc(var(--section-y) * 2);
+
+    }
+
+}
+
+/* ********************** de Desktop a DESKTOP 2 ********************** */
+
+@media (min-width: 75rem) {
+    /* 1200px */
+
+}
+
+@media (min-width: 75rem) and (min-height: 45rem) {
+    /* 1200, 720 */
+}
+
+/* ********************** de Desktop 2 a HD ********************** */
+
+@media (min-width: 87.5rem) {
+    /* 1400px */
+}
+
+@media (min-width: 87.5rem) and (min-height: 49.375rem) {
+    /* 1400px, 790px */
+}
+
+/* ********************** de Hd a FULL HD ********************** */
+
+@media (min-width: 100rem) {
+    /* 1600px */
+}
+
+@media (min-width: 105rem) {
+    /* ! Wrapper break: 1680px */
+}
+
+@media (min-width: 100rem) and (min-height: 49.375rem) {
+    /* 1600px, 790px */
+}
+
+@media (min-width: 100rem) and (min-height: 56.25rem) {
+    /* 1600px, 900px */
+}
+
+@media (min-width: 112.5rem) {
+    /* 1800px */
+
+}
+
+@media (min-width: 112.5rem) and (min-height: 56.25rem) {
+    /* 1800px, 900px */
+}
