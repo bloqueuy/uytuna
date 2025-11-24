@@ -26,8 +26,9 @@
 }
 
 .c-video-polygon__image {
+    --_offset: 15rem;
     position: absolute;
-    top: 12rem;
+    top: var(--_offset);
     width: 100%;
     height: 100%;
     object-fit: cover;
