@@ -14,7 +14,7 @@
     isolation: isolate;
     color: var(--_color);
     font-size: var(--_fz);
-    padding-bottom: calc(var(--_offset) * 1);
+    padding-block: calc(var(--_offset) * 1);
 }
 
 
@@ -46,7 +46,6 @@
     clip-path: polygon(0 0, 0 0, 100% 9%, 100% 100%, 100% 100%, 0% 90%);
     background-color: var(--color-primary-500);
     z-index: 1;
-    box-shadow: 0 3rem 5rem rgba(0, 0, 0, .2);
 }
 
 

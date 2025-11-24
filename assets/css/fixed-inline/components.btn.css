@@ -17,7 +17,8 @@
   --_color: var(--color-neutral-100);
   --_bg: var(--color-primary-500);
 
-  display: inline-block;
+  display: block;
+  width: max-content;
   font-size: var(--btn-fz, var(--_fz));
   font-family: var(--btn-ff, var(--_ff));
   font-weight: var(--btn-fw, var(--_fw));
@@ -27,7 +28,7 @@
   background-color: var(--btn-bg, var(--_bg));
   padding: var(--btn-py, var(--_py)) var(--btn-px, var(--_px));
   border-radius: var(--btn-radius, var(--_radius));
-  box-shadow: .75rem .75rem 0 0 var(--color-accent);
+  box-shadow: .75rem .75rem 0 0 var(--color-secondary);
 }
 
 .c-btn--light{

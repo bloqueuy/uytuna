@@ -31,7 +31,7 @@
     top: var(--_offset-top);
     bottom: 0;
     z-index: -1;
-    background: linear-gradient(180deg, hsl(var(--color-accent-100-hsl) / 11%), hsl(var(--color-accent-100-hsl) / 0%) 115%);
+    background: linear-gradient(180deg, hsl(var(--color-secondary-100-hsl) / 11%), hsl(var(--color-secondary-100-hsl) / 0%) 115%);
     border-radius: var(--_radius);
     box-shadow: inset 0 0 0 .1rem hsl(var(--color-primary-100-hsl) / 7%);
     backdrop-filter: blur(0.8rem);
@@ -144,12 +144,8 @@ input:checked~.c-form__checkbox {
 }
 
 .c-form__btn{
-    width: max-content;
-    margin-inline: auto;
-    text-align: center;
     margin-top: 1.5em;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    margin-inline: auto;
 }
 
 .c-form--hidden{
@@ -172,9 +168,9 @@ input:checked~.c-form__checkbox {
     gap: 1rem;
     margin: 2rem 0;
     padding: 2rem;
-    background: hsl(var(--color-accent-100-hsl) / 5%);
+    background: hsl(var(--color-secondary-100-hsl) / 5%);
     border-radius: var(--_radius);
-    border: 0.1rem solid hsl(var(--color-accent-100-hsl) / 10%);
+    border: 0.1rem solid hsl(var(--color-secondary-100-hsl) / 10%);
 }
 
 .loading--active{
@@ -184,8 +180,8 @@ input:checked~.c-form__checkbox {
 .spinner{
     width: 2rem;
     height: 2rem;
-    border: 0.2rem solid hsl(var(--color-accent-100-hsl) / 20%);
-    border-top: 0.2rem solid var(--color-accent-500);
+    border: 0.2rem solid hsl(var(--color-secondary-100-hsl) / 20%);
+    border-top: 0.2rem solid var(--color-secondary-500);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }
@@ -229,7 +225,7 @@ input:checked~.c-form__checkbox {
     text-align: center;
     display: block;
     font-size: 3rem;
-    color: var(--color-accent-500);
+    color: var(--color-secondary-500);
     margin-bottom: 1rem;
     background: hsl(var(--color-primary-200-hsl) / 20%);
     border-radius: 50%;

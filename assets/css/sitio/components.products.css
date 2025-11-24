@@ -24,14 +24,6 @@
     color: var(--color-neutral-900);
 }
 
-.c-products__title{
-    font-size: var(--fz-300);
-    color: var(--color-neutral-900);
-    text-align: center;
-    margin-bottom: 1rem;
-    font-weight: 700;
-    font-family: var(--font-alt);
-}
 
 .c-product__info{
     display: flex;

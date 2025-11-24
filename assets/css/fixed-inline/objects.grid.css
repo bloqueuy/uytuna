@@ -7,10 +7,15 @@
 .o-grid{
     --_cols: 1;
     --_gap: 5em;
+    --_max-width: 28rem;
 
     display: grid;
     grid-template-columns: repeat(var(--grid-cols, var(--_cols)), 1fr);
     gap: var(--grid-gap, var(--_gap));
+}
+
+.o-grid > picture img{
+    max-width: var(--grid-picture-max-width, var(--_max-width));
 }
 
 
@@ -61,7 +66,10 @@
         --_cols: 2;
         align-items: var(--grid-align, center);
         justify-content: var(--grid-justify, center);
-  
+    }
+
+    .o-grid > picture img{
+        --_max-width: 54.8rem;
     }
 }
 

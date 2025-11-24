@@ -12,7 +12,7 @@
     height: 100%;
 }
 
-.c-hero__video-video{
+.c-hero__media{
     object-fit: cover;
     position: absolute;
     top: 0;

@@ -7,7 +7,7 @@
 @media (hover: hover) {
   .c-btn:is(:hover, :focus){
     background-color: var(--color-secondary);
-    box-shadow: 0 0 0 0 var(--color-accent);
+    box-shadow: 0 0 0 0 var(--color-secondary);
   }
 
   .c-btn:is(:hover, :focus).c-btn--light {

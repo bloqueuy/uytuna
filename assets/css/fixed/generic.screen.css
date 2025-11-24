@@ -24,6 +24,10 @@ a, button{
     outline-offset: 0.1rem;
 }
 
+::selection{
+    background-color: hsl(var(--color-secondary-hsl) / 50%);
+}
+
 body:has(.c-popup.is-visible){
     overflow: hidden;
 }

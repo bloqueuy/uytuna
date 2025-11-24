@@ -70,7 +70,7 @@
 
 .u-subheading span,
 .u-heading span{
-  --_color: var(--color-accent);
+  --_color: var(--color-secondary);
   color: var(--subheading-span-color, var(--_color));
 }
 

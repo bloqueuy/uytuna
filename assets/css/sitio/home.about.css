@@ -14,14 +14,14 @@
     background-color: var(--color-primary-600);
 }
 
-.c-about__hero {
+.c-about__section {
     position: relative;
     isolation: isolate;
     min-height: 70vh;
     padding-block: var(--section-y, 8rem);
 }
 
-.c-about__background-image--hero {
+.c-about__background-image--intro {
     position: absolute;
     inset: -20rem 0 0 0; 
     background-image: url('/assets/images/temp/home/about-hero-bg.png');
@@ -119,7 +119,7 @@
 @media (hover: hover) {
     .c-about__link:hover {
         color: var(--color-neutral-100);
-        background-color: var(--color-accent);
+        background-color: var(--color-secondary);
     }
 }
 
