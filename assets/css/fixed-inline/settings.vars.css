@@ -16,7 +16,7 @@
     --tap-size: 4.8rem;
     --header: 6.5rem;
     
-    --hero-offset: -1;
+    /* --hero-offset: -1; */
 
 
     --wrapper-x: var(--space-x);
@@ -77,7 +77,7 @@
         --wrapper-x: clamp(var(--space-x), 10.416vw, 15rem);
         --header-wrapper: clamp(var(--space-x), 3.472vw, 5rem);
         --header: 7rem;
-        --hero-offset: -3;
+        --hero-offset: -2;
     }
 
 }
