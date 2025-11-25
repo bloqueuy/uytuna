@@ -30,13 +30,13 @@
     position: absolute;
     top: var(--_offset);
     width: 100%;
-    height: 100%;
     object-fit: cover;
     z-index:  2;
 }
 
 .c-video-polygon__image img {
-    max-width: clamp(28rem, 69.444vw, 100rem);
+    width: min(100%, clamp(28rem, 69.444vw, 100rem));
+    max-width: none;
 }
 
 

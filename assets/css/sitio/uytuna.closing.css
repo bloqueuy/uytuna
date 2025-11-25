@@ -137,6 +137,7 @@
     .c-closing {
         --_offset: 30rem;
         height: auto;
+        padding-block: 0;
     }
 
     .c-closing__content {
@@ -145,7 +146,8 @@
     }
 
     .c-closing__pic-wrapper {
-        margin-top: calc(var(--_offset) * -.3);
+        top: -40rem;
+        height: 70vh;
     }
 
     .c-closing__pic {

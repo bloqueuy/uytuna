@@ -4,17 +4,18 @@
 
 /* ANIMATIONS */
 
-.u-slide-left {
+.u-animation-left {
     opacity: 0;
-    transform: translateX(-100px);
 }
 
-.u-slide-right {
+.u-animation-right {
     opacity: 0;
-    transform: translateX(100px);
 }
 
-.u-slide-down {
+.u-animation-down {
     opacity: 0;
-    transform: translateY(-100px);
+}
+
+.u-animation-sequence {
+    opacity: 0;
 }

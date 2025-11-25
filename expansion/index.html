@@ -34,8 +34,11 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 
-</head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
+
+</head>
 <body>
 
     <!-- HEADER: Start -->
@@ -61,7 +64,7 @@
                     <li class="c-nav__item"><a class="c-nav__link" href="/marca-blanca/">Marca Blanca</a></li>
                     <li class="c-nav__item"><a class="c-nav__link" href="/marca-uytuna/">Marca Uytuna</a></li>
                     <li class="c-nav__item"><a class="c-nav__link is-active" href="/expansion/">Expansión</a></li>
-                    <li class="c-nav__item"><a class="c-nav__link" href="/contacto/">Contacto</a></li>
+                    <!-- <li class="c-nav__item"><a class="c-nav__link" href="/contacto/">Contacto</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -73,7 +76,7 @@
     <div class="c-hero">
         <div class="c-hero__background-image c-pic c-pic--cover"></div>
         <div class="c-hero__content o-wrapper">
-            <h1 class="c-hero__title u-heading u-heading--sm">
+            <h1 class="c-hero__title u-heading u-heading--sm u-animation-sequence">
                 Expansión
             </h1>
         </div>
@@ -106,7 +109,8 @@
                     <div class="c-media-content__container">
 
                         <picture class="c-expansion__banner c-pic">
-                            <img src="/assets/images/temp/generic/figure-back-video.svg" alt="Fondo decorativo para video">
+                            <img src="/assets/images/temp/generic/figure-back-video.svg"
+                                alt="Fondo decorativo para video">
                         </picture>
 
                         <div class="c-expansion__banner-wrapper">
@@ -133,7 +137,7 @@
                 <img src="/assets/images/temp/expansion/expansion@img-1.png" alt="Expansión internacional de Uytuna">
             </picture>
 
-            <div class="c-overlay-title">
+            <div class="c-overlay-title u-animation-sequence">
 
                 <picture class="c-overlay-title__background c-pic">
                     <img src="/assets/images/temp/generic/figure-back-title-1.png" alt="Fondo decorativo">
@@ -148,8 +152,9 @@
 
         <section>
             <div class="o-grid o-wrapper o-section">
-                <picture class="c-media-content__pic c-pic">
-                    <img src="/assets/images/temp/expansion/expansion@img-2.png" alt="Resultados y crecimiento de Uytuna">
+                <picture class="c-media-content__pic c-pic u-animation-sequence">
+                    <img src="/assets/images/temp/expansion/expansion@img-2.png"
+                        alt="Resultados y crecimiento de Uytuna">
                 </picture>
                 <div>
                     <h2 class="u-heading u-heading--xs">
@@ -159,9 +164,11 @@
                         <strong>producción y
                             exportación de conservas de atún en Uruguay</strong>, destacando por su especialización en
                         packaging pouch, una solución moderna, sostenible y eficiente, junto al tradicional envase de
-                        vidrio.</p>
+                        vidrio.
+                    </p>
 
-                    <p class="u-text">Con más de <strong>15 años de experiencia internacional</strong> en el sector, nuestra
+                    <p class="u-text">Con más de <strong>15 años de experiencia internacional</strong> en el sector,
+                        nuestra
                         trayectoria ha impulsado la <strong>expansión a mercados clave como Argentina y Brasil</strong>,
                         donde contamos con oficinas y máxima capacidad operativa. Este crecimiento sostenido reafirma
                         nuestro compromiso con la <strong>innovación, la sostenibilidad y la excelencia
@@ -226,8 +233,9 @@
                             href="mailto:info@uytuna.com">info@uytuna.com</a></li>
                     <li class="c-footer__item"><a class="c-footer__link"
                             href="https://www.instagram.com/uytuna_/?igsh=cHV6Z2N1b3QxZXV5#" target="_blank"><img
-                                class="u-tap-size" src="/assets/images/temp/home/icons/icon__instagram.svg" alt="Seguir a Uytuna en Instagram"
-                                title="Seguinos en Instagram" aria-label="Seguinos en Instagram"></a>
+                                class="u-tap-size" src="/assets/images/temp/home/icons/icon__instagram.svg"
+                                alt="Seguir a Uytuna en Instagram" title="Seguinos en Instagram"
+                                aria-label="Seguinos en Instagram"></a>
                     </li>
 
                 </ul>
@@ -253,7 +261,8 @@
     <script src="/assets/js/fixed/interfaz.js"></script>
 
     <!-- sitio -->
-    <script src="/assets/js/sitio/hero-video.js"></script>
+    <script src="/assets/js/sitio/animation.gsap.js"></script>
+
 
 </body>
 
