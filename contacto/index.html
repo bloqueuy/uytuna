@@ -62,7 +62,7 @@
                     <li class="c-nav__item"><a class="c-nav__link" href="/marca-blanca/">Marca Blanca</a></li>
                     <li class="c-nav__item"><a class="c-nav__link" href="/marca-uytuna/">Marca Uytuna</a></li>
                     <li class="c-nav__item"><a class="c-nav__link" href="/expansion/">Expansión</a></li>
-                    <!-- <li class="c-nav__item"><a class="c-nav__link is-active" href="/contacto/">Contacto</a></li> -->
+                    <li class="c-nav__item"><a class="c-nav__link is-active" href="/contacto/">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -190,8 +190,8 @@
                                     apellido</span>
                             </div>
 
-                            <div class="c-form__group" id="nameGroup">
-                                <label for="name">Empresa/Marca <span class="c-form__required">*</span></label>
+                            <div class="c-form__group" id="companyGroup">
+                                <label for="company">Empresa/Marca <span class="c-form__required">*</span></label>
                                 <input type="text" id="company" name="company" required class="c-form__input">
                                 <span class="c-form__error-message" id="companyError">Por favor ingresa el nombre de tu
                                     empresa o marca</span>
@@ -226,12 +226,13 @@
                             <span class="c-form__error-message" id="messageError">Por favor ingresa tu consulta</span>
                         </div>
 
-                        <div class="c-form__checkbox-wrapper c-form__checkbox-wrapper--error">
+                        <div class="c-form__checkbox-wrapper">
                             <div class="c-form__checkbox-content"> 
                                 <label for="check" class="c-form__checkbox-label">
                                     <input type="checkbox" name="checkbox" id="check">
                                     <span class="c-form__checkbox"></span>
-                                    <a href="/" class="c-form__link c-link">Acepto los términos y condiciones</a>
+                                    <span>He leído y acepto los términos y condiciones de la <a class="c-form__link c-link c-link--underline" href="/politica-de-privacidad/">política de privacidad</a> de UYTUNA.</span>
+                                    
                                 </label>
                             </div>
                             <span class="c-form__error">Debes aceptar los términos y condiciones</span>
@@ -287,8 +288,7 @@
                     <li class="c-footer__item"><a class="c-footer__link" href="/marca-blanca/">Marca Blanca</a></li>
                     <li class="c-footer__item"><a class="c-footer__link" href="/marca-uytuna/">Marca Uytuna</a></li>
                     <li class="c-footer__item"><a class="c-footer__link" href="/expansion/">Expansión</a></li>
-
-
+                    <li class="c-footer__item"><a class="c-footer__link" href="/contacto/">Contacto</a></li>
                 </ul>
 
                 <ul class="c-footer__list">
@@ -331,6 +331,7 @@
     <script src="/assets/js/fixed/interfaz.js"></script>
 
     <!-- sitio -->
+     <script src="/assets/js/sitio/contact.form.js"></script>
 
 </body>
 

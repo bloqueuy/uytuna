@@ -37,7 +37,6 @@
     backdrop-filter: blur(0.8rem);
 }
 
-
 .c-form__group{
     display: flex;
     flex-direction: column;
@@ -72,14 +71,14 @@
    
 }
  
-.c-form__required{
+/* .c-form__required{
     color: var(--color-neutral-500);
-}
+} */
 
 .c-form__error-message{
     color: var(--color-error);
-    font-size: var(--fz-100);
-    display: block;
+    font-size: var(--fz-000);
+    display: none;
 }
 
 .c-form__group--error .c-form__error-message{
@@ -89,14 +88,15 @@
 
 .c-form__error {
     color: var(--color-error);
-    font-size: var(--fz-100);
-    /* display: none; */
+    font-size: var(--fz-000);
+    display: none;
 }
 
 .c-form__checkbox-wrapper {
     display: flex;
     flex-direction: column;
     gap: 0.25em;
+    margin-top: 1.5em;
 }
 
 .c-form__checkbox-content {
@@ -114,6 +114,10 @@
 
 .c-form__checkbox-wrapper--error .c-form__checkbox {
     border: .1rem solid var(--color-error);
+}
+
+.c-form__checkbox-wrapper--error .c-form__error {
+    display: block;
 }
 
 .c-form__checkbox-wrapper + .c-form__checkbox-wrapper {
@@ -142,6 +146,7 @@ input:checked~.c-form__checkbox {
     background-position: center;
     border: .1rem solid var(--color-neutral-900);
 }
+
 
 .c-form__btn{
     margin-top: 1.5em;
@@ -196,13 +201,14 @@ input:checked~.c-form__checkbox {
     --_py: 1.5em;
     --_px: 1.2em;
     --_radius: 1.6rem;
+    --text-fz: var(--fz-300);
 
     display: none;
     margin-top: var(--space-y);
     text-align: center;
     padding: var(--_py) var(--_px);
-    color: var(--color-neutral-100);
-    font-size: var(--fz-400);
+    color: var(--color-primary-500);
+    margin-top: .5em;
     font-weight: 600;
     border-radius: var(--_radius);
     box-shadow: inset 0 0 0 .1rem hsl(var(--color-primary-100-hsl) / 15%);
@@ -214,26 +220,10 @@ input:checked~.c-form__checkbox {
     gap: 1rem;
 }
 
-
 .c-form__success-message .u-text{
     --text-color: var(--color-primary-100);
 }
 
-.c-form__success-message::before{
-    content: "✓";
-    width: max-content;
-    text-align: center;
-    display: block;
-    font-size: 3rem;
-    color: var(--color-secondary-500);
-    margin-bottom: 1rem;
-    background: hsl(var(--color-primary-200-hsl) / 20%);
-    border-radius: 50%;
-    padding-inline: .5em;
-    padding-block: .2em;
-    text-align: center;
-    margin-inline: auto;
-}
 
 
 
