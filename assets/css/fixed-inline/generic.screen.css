@@ -8,6 +8,7 @@ html{
     font-size: 62.5%;
     font-family: var(--font);
     color: var(--color-neutral-800);
+    overflow-x: hidden;
 }
 html:not(.disable-smooth-scroll){
     scroll-behavior: smooth;
@@ -18,6 +19,7 @@ html:not(.disable-smooth-scroll){
 }
 body{
     font-size: 100%;
+    overflow-x: hidden;
 }
 input, textarea, select, body, button{
     -webkit-font-smoothing: antialiased;

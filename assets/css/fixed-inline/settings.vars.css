@@ -2,9 +2,10 @@
 /** SETTINGS: VARIABLES
 /* ******************************************** */
 
-:root {
-    --font: 'Poppins', sans-serif;
-    --font-alt: 'Playfair Display', serif;
+    :root {
+        
+    --font: 'Montserrat', sans-serif;
+
 
     /* Sizes */
     --space-x: 2.6rem;

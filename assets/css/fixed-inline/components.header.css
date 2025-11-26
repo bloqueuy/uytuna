@@ -41,7 +41,7 @@
 }
 
 .c-header__logo {
-    max-width: clamp(11rem, 12.36vw, 17.8rem);
+    max-width: clamp(9rem, 11.111vw, 16rem);
     width: 100%;
     height: 100%;
 }

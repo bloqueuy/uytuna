@@ -4,7 +4,7 @@
 
 
 :root {
-    --fz-000: 1.3rem;
+    --fz-000: 1.4rem;
     --fz-100: 1.5rem;
     --fz-200: 1.7rem;
     --fz-300: 1.9rem;
@@ -58,7 +58,7 @@
 @media (min-width: 61.25rem) { /* 980px */
 
     :root {
-        --fz-000: clamp(1.3rem, 0.97vw, 1.4rem);
+        --fz-000: clamp(1.4rem, 1.04vw, 1.5rem);
         --fz-100: clamp(1.5rem, 1.04vw, 1.6rem);
         --fz-200: clamp(1.7rem, 1.25vw, 1.8rem);
         --fz-300: clamp(1.9rem, 1.52vw, 2.2rem);
