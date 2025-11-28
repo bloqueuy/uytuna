@@ -10,6 +10,7 @@
 
 .c-products__list{
     --_fz: var(--fz-200);
+
     position: relative;
     display: grid;
     border-top: .1rem solid var(--color-neutral-900);
@@ -22,6 +23,13 @@
     top: -3rem;
     font-size: var(--_fz);
     color: var(--color-neutral-900);
+}
+
+.c-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5em;
 }
 
 
@@ -53,9 +61,6 @@
     color: var(--color-neutral-500);
 }
 
-.c-product__image{
-    margin-top: .5em;
-}
 
 /* ********************** SHORT MOBILE ********************** */
 
