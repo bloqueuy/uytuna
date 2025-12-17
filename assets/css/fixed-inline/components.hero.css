@@ -36,7 +36,7 @@
 
 .c-hero__content {
     position: relative;
-    top: calc(var(--header) * 1.5);
+    top: calc(var(--header) * 2.2);
     z-index: 1;
 }
 

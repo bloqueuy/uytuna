@@ -43,7 +43,7 @@
 .s-content h3,
 .s-content h4,
 .s-content h5 {
-    --_fz: var(--fz-800);
+    --_fz: var(--fz-400);
     --_lh: 1.1;
     --_fw: 700;
 
@@ -60,7 +60,7 @@
 }
 
 .s-content h2 {
-    --_fz: var(--fz-700);
+    --_fz: var(--fz-600);
 }
 
 .s-content h1~*,
@@ -98,7 +98,7 @@
 
 .s-content ul,
 .s-content ol {
-    --_bullet-color: var(--content-bullet-color, var(--color-neutral-500));
+    --_bullet-color: var(--content-bullet-color, var(--color-secondary));
     padding-left: var(--_list-offset);
 }
 
@@ -170,11 +170,11 @@
 
     /* ! Links */
     .s-content a:hover {
-        opacity: .8;
+        color: var(--color-secondary);
     }
 
     .s-content ul li a:is(:hover, :focus-visible) {
-        color: var(--color-primary);
+        color: var(--color-secondary);
     }
 
 }
