@@ -68,6 +68,7 @@
     position: relative;
     max-width: var(--_img-max-width);
     width: 100%;
+    margin-top: auto;
 }
 
 
