@@ -146,7 +146,7 @@
     }
 
     .c-closing__pic-wrapper {
-        top: -40rem;
+        top: -25rem;
         height: 70vh;
     }
 
@@ -189,6 +189,11 @@
 
 @media (min-width: 100rem) {
     /* 1600px */
+
+    .c-closing__pic-wrapper {
+        top: -40rem;
+    }
+
 }
 
 @media (min-width: 100rem) and (min-height: 49.375rem) {
