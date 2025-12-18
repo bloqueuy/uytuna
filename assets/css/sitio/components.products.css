@@ -141,7 +141,16 @@
     }
 
     .c-products__list {
-        grid-template-columns: repeat(var(--cols, 4), 1fr);
+        --_cols: 4;
+        --_col-size: 1fr;
+        grid-template-columns: repeat(var(--_cols), var(--_col-size));
+    }
+
+    .c-products__list--col2 {
+        --_cols: 2;
+        --_col-size: .3fr;
+        align-items: center;
+        justify-content: center;
     }
 
     .c-products__list+.c-products__list {
